@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -36,7 +37,12 @@ class crearcuenta : AppCompatActivity() {
             val correo = inputCorreo.text.toString()
             val password = inputContrasena.text.toString()
 
-            val nombreEntero = "$nombre $apellido";
+            if (nombre.isEmpty() || apellido.isEmpty() || correo.isEmpty() || password.isEmpty()) {
+                Toast.makeText(this, "Todos los campos son obligatorios", Toast.LENGTH_SHORT).show()
+            } else {
+                val nombreEntero = "$nombre $apellido";
+
+            //val nombreEntero = "$nombre $apellido";
 
             val usuario = hashMapOf(
                 "usuario" to nombreEntero,
@@ -44,9 +50,19 @@ class crearcuenta : AppCompatActivity() {
                 "password" to password
             )
 
+
             db
                 .collection("usuarios")
                 .add(usuario)
+                .addOnSuccessListener {
+                    Toast.makeText(this, "Registrado con éxito", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, pantalla2::class.java)
+                    startActivity(intent)
+                }
+                .addOnFailureListener {
+                    Toast.makeText(this, "Error al registrar", Toast.LENGTH_SHORT).show()
+                }
+            }
 
         }
     }
