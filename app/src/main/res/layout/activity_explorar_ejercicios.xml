@@ -99,8 +99,8 @@
                     android:id="@+id/encontrarejercicios"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="56dp"
                     android:shadowColor="#dbdbdb"
                     android:shadowDy="8"
                     android:shadowRadius="4"
@@ -189,7 +189,32 @@
                     android:textSize="34sp"
                     android:textStyle="bold" />
             </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="150dp">
 
+        <ImageButton
+            android:id="@+id/EjercitandoPierna"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ejerciciopierna"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:shadowColor="#181819"
+            android:shadowDy="8"
+            android:shadowRadius="10"
+            android:text="Ejercicios de pierna"
+            android:textColor="@android:color/white"
+            android:textSize="34sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
 
         </LinearLayout>
     </ScrollView>
