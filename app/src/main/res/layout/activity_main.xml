@@ -47,6 +47,7 @@
         app:layout_constraintVertical_bias="0.405"
         android:background="@drawable/color_button"/>
 
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -58,7 +59,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintVertical_bias="0.146" />
+
+    <Button
+        android:id="@+id/botonregistrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="@null"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+        app:layout_constraintVertical_bias="0.057"
+        />
+    />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

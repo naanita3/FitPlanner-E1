@@ -25,5 +25,14 @@ class MainActivity : AppCompatActivity() {
             val intent: Intent = Intent(this, pantalla2:: class.java)
             startActivity(intent)
         }
+
+        val btnr: Button = findViewById(R.id.botonregistrate)
+        btnr.setOnClickListener {
+
+            val intent: Intent = Intent(this, crearcuenta:: class.java)
+            startActivity(intent)
+        }
+
+
     }
 }
