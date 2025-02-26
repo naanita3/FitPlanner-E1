@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PantallaPectoral"
+    tools:context=".PantallaPierna"
     android:background="@color/white">
     <View
         android:id="@+id/view"
@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.075" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView32"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="FitPlanner"
@@ -185,7 +185,7 @@
         app:layout_constraintVertical_bias="0.917" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Extension de pierna"
@@ -240,7 +240,7 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ejercicios de biceps recomendados"
+        android:text="Ejercicios de pierna recomendados"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -263,5 +263,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/bottom_nav_menu" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

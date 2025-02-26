@@ -38,6 +38,12 @@ class ExplorarEjercicios : AppCompatActivity() {
             val intent = Intent(this, PantallaBrazo::class.java)
             startActivity(intent)
         }
+        val imgbtn4: ImageButton = findViewById(R.id.entrenamientopierna)
+
+        imgbtn4.setOnClickListener {
+            val intent = Intent(this, PantallaPierna::class.java)
+            startActivity(intent)
+        }
     }
 
 
