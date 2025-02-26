@@ -75,6 +75,124 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.075" />
 
+    <ScrollView
+        android:layout_width="440dp"
+        android:layout_height="560dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/encontrarejercicios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:shadowColor="#dbdbdb"
+                    android:shadowDy="8"
+                    android:shadowRadius="4"
+                    android:text="Encuentra Ejercicios"
+                    android:textColor="#181819"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <RelativeLayout
+                android:layout_width="380dp"
+                android:layout_height="240dp"
+                android:layout_marginTop="20dp">
+
+                <ImageButton
+                    android:id="@+id/entrenamientopecho"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ejerciciopecho" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:shadowColor="#181819"
+                    android:shadowDy="8"
+                    android:shadowRadius="10"
+                    android:text="Ejercicios de pectoral"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="380dp"
+                android:layout_height="240dp"
+                android:layout_marginTop="20dp">
+
+                <ImageButton
+                    android:id="@+id/EjercitandoEspalda"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ejercicioespalda" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:shadowColor="#181819"
+                    android:shadowDy="8"
+                    android:shadowRadius="10"
+                    android:text="Ejercicios de espalda"
+                    android:textColor="@android:color/white"
+                    android:textSize="32dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="380dp"
+                android:layout_height="240dp"
+                android:layout_marginTop="20dp">
+
+                <ImageButton
+                    android:id="@+id/EjercitandoBrazo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ejerciciobrazo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:shadowColor="#181819"
+                    android:shadowDy="8"
+                    android:shadowRadius="10"
+                    android:text="Ejercicios de brazo"
+                    android:textColor="@android:color/white"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
