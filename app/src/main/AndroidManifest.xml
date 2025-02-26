@@ -13,6 +13,12 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".PantallaEspalda"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaPectoral"
+            android:exported="false" />
+        <activity
             android:name=".ExplorarEjercicios"
             android:exported="false" />
         <activity
@@ -27,7 +33,6 @@
         <activity
             android:name=".MainMenu"
             android:exported="false" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
