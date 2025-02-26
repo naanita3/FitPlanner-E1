@@ -75,7 +75,7 @@
         app:layout_constraintVertical_bias="0.075" />
 
     <ImageButton
-        android:id="@+id/tricepsjmpress"
+        android:id="@+id/tricepsjms"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
@@ -89,7 +89,7 @@
         app:srcCompat="@drawable/tricepsjmpress" />
 
     <ImageButton
-        android:id="@+id/tricepspoleabaja"
+        android:id="@+id/tricepspoleabaa"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
@@ -103,7 +103,7 @@
         app:srcCompat="@drawable/tricepspoleabaja" />
 
     <ImageButton
-        android:id="@+id/tricepsskull"
+        android:id="@+id/tricepsskul"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
@@ -117,7 +117,7 @@
         app:srcCompat="@drawable/tricepsskull" />
 
     <ImageButton
-        android:id="@+id/tricepscopa"
+        android:id="@+id/tricepscop"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
@@ -131,7 +131,7 @@
         app:srcCompat="@drawable/tricepscopa" />
 
     <ImageButton
-        android:id="@+id/tricepsdips"
+        android:id="@+id/tricepsdip"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
@@ -145,7 +145,7 @@
         app:srcCompat="@drawable/tricepsdips" />
 
     <ImageButton
-        android:id="@+id/tricepspoleaalte"
+        android:id="@+id/tricepspoleaal"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
@@ -278,6 +278,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.415" />
-
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
