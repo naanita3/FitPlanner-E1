@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:title="Inicio"
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/home" /><!-- Ícono para "Inicio" -->
+             <!-- Texto para "Inicio" -->
+
+        <item
+            android:title="Mi Plan"
+            android:id="@+id/navigation_plan"
+            android:icon="@drawable/dieta2"/> <!-- Ícono para "Mi Plan" -->
+        <!-- Texto para "Mi Plan" -->
+
+        <item
+            android:title="Mi Rutina"
+            android:id="@+id/navigation_routine"
+            android:icon="@drawable/rutina" /><!-- Ícono para "Mi Rutina" -->
+         <!-- Texto para "Mi Rutina" -->
+
+        <item
+            android:title="Explorar"
+            android:id="@+id/navigation_explore"
+            android:icon="@drawable/buscar"/>
+        <!-- Ícono para "Explorar" -->
+         <!-- Texto para "Explorar" -->
+
+        <item
+            android:title="Mi Cuenta"
+            android:id="@+id/navigation_account"
+            android:icon="@drawable/yo"/> <!-- Ícono para "Mi Cuenta" -->
+             <!-- Texto para "Mi Cuenta" -->
+    </menu>
