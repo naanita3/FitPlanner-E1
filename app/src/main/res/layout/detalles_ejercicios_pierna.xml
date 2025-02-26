@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/textView7"
@@ -11,8 +12,7 @@
         android:layout_height="wrap_content"
         android:text="3 series 8-12 repeticiones"
         tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="486dp" />
-
+        tools:layout_editor_absoluteY="486dp"/>
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="131dp"
@@ -52,5 +52,21 @@
         android:text="3 series 12-15 repeticiones"
         tools:layout_editor_absoluteX="195dp"
         tools:layout_editor_absoluteY="630dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="89dp"
+        android:layout_height="142dp"
+        app:srcCompat="@mipmap/curlfemoralacostado"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="149dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/fitplanner_icono2"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
