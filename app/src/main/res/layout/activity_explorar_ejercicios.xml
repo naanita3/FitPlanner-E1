@@ -144,7 +144,7 @@
                 android:layout_marginTop="20dp">
 
                 <ImageButton
-                    android:id="@+id/EjercitandoEspalda"
+                    android:id="@+id/entrenamientoespalda"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@null"
