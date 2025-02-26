@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="428dp"
         android:background="@drawable/text_color"
-        android:text="FitPlanner"
+        android:text="FitPlansner"
         android:textColor="#0015FF"
         android:textSize="50dp"
         android:textStyle="bold"
