@@ -170,7 +170,7 @@
                 android:layout_marginTop="20dp">
 
                 <ImageButton
-                    android:id="@+id/EjercitandoBrazo"
+                    android:id="@+id/entrenamientobrazo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@null"
@@ -196,7 +196,7 @@
         android:layout_marginBottom="150dp">
 
         <ImageButton
-            android:id="@+id/EjercitandoPierna"
+            android:id="@+id/entrenamientopierna"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@null"
