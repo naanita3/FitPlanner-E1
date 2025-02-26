@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".PantallaBrazo"
+            android:exported="false" />
+        <activity
             android:name=".PantallaEspalda"
             android:exported="false" />
         <activity
