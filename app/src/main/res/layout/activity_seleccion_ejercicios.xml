@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:text="Mi rutina"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="246dp" />
