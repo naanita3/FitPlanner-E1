@@ -8,18 +8,6 @@
     android:background="@color/white">
 
     <View
-        android:id="@+id/view5"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:background="#C3C3C3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.071" />
-
-    <View
         android:id="@+id/view4"
         android:layout_height="50dp"
         android:background="#181819"
@@ -44,21 +32,6 @@
        app:layout_constraintTop_toTopOf="parent"
        app:layout_constraintVertical_bias="0.001"/>
 
-    <TextView
-        android:id="@+id/textView33"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mi rutina"
-        android:textColor="@color/black"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.105"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.068" />
-
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="57dp"
@@ -71,25 +44,25 @@
     <View
         android:id="@+id/view"
         android:layout_width="367dp"
-        android:layout_height="375dp"
+        android:layout_height="470dp"
         android:background="@drawable/color_cuadradogris"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.363"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.705" />
+        app:layout_constraintVertical_bias="0.9" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rutina para piernas"
+        android:text="Mi rutina"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="266dp" />
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="246dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -107,10 +80,11 @@
         android:id="@+id/imageView10"
         android:layout_width="263dp"
         android:layout_height="556dp"
-        android:layout_marginBottom="280dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="308dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:srcCompat="@drawable/ejerciciopierna"
-        tools:layout_editor_absoluteX="74dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ejerciciopierna" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
