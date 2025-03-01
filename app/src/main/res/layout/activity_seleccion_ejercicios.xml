@@ -43,15 +43,15 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="367dp"
+        android:layout_width="330dp"
         android:layout_height="470dp"
         android:background="@drawable/color_cuadradogris"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.938" />
 
     <TextView
         android:id="@+id/textView13"
@@ -61,8 +61,8 @@
         android:textColor="@color/black"
         android:textSize="26sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="246dp" />
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="245dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -77,14 +77,14 @@
         app:menu="@menu/bottom_nav_menu" />
 
     <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="263dp"
-        android:layout_height="556dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginBottom="308dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imageView11"
+        android:layout_width="329dp"
+        android:layout_height="660dp"
+        android:layout_marginStart="40dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ejerciciopierna" />
+        app:srcCompat="@drawable/ejerciciopierna"
+        tools:layout_editor_absoluteY="-182dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
