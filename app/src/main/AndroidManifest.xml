@@ -48,6 +48,10 @@
         <activity
             android:name=".MainMenu"
             android:exported="false" />
+        <!-- PARTE DEL NAVBAR MI RUTINA-->
+        <activity
+            android:name=".PantallaSeleccionEjer"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

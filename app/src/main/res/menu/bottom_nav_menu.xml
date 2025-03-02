@@ -9,7 +9,6 @@
             android:id="@+id/navigation_plan"
             android:icon="@drawable/m_1"
             android:title="Mi Plan"/>
-
         <item
             android:id="@+id/navigation_routine"
             android:icon="@drawable/pie"
