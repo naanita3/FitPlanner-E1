@@ -52,9 +52,6 @@
         <activity
             android:name=".ActivitySetEjercicios"
             android:exported="false" />
-        <activity
-            android:name=".PantallaSeleccionEjer"
-            android:exported="false" />
 
         <!-- PARTE DEL NAVBAR MI RUTINA
         <activity

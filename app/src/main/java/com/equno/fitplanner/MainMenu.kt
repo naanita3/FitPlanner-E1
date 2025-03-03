@@ -19,22 +19,14 @@ class MainMenu : AppCompatActivity() {
             val intent = Intent(this, ExplorarEjercicios::class.java)
             startActivity(intent)
         }
-    }
-}
 
-class PantallaSeleccionEjer : AppCompatActivity() {
+        // Busca el botón por su ID
+        val btnMiRutina = findViewById<Button>(R.id.PantallaSelecEjer)
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sel_ejercicios)
-
-        // Referencia al botón
-        val btnMiRutina = findViewById<Button>(R.id.PantallaMiRutina)
-
-        // Configurar el clic del botón
+        // Configura el clic del botón
         btnMiRutina.setOnClickListener {
-            // Crear un Intent para navegar a SelEjerciciosActivity
-            val intent = Intent(this, PantallaSeleccionEjer::class.java)
+            // Crea un Intent para navegar a ActivitySetEjercicios
+            val intent = Intent(this, ActivitySetEjercicios::class.java)
             startActivity(intent)
         }
     }
