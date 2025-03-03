@@ -4,10 +4,14 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
+import android.widget.ImageButton
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.snackbar.Snackbar
 
 class PantallaBiceps : AppCompatActivity() {
 
@@ -70,7 +74,7 @@ class PantallaBiceps : AppCompatActivity() {
         //    if (isChecked) {
         //        ejerciciosSeleccionados.add("Curl de bíceps con mancuernas")
         //    } else {
-        //        ejerciciosSeleccionados.remove("Curl de bíceps predicador")
+        //       ejerciciosSeleccionados.remove("Curl de bíceps predicador")
         //    }
         //}
 
@@ -90,5 +94,13 @@ class PantallaBiceps : AppCompatActivity() {
         //    val intent = Intent(this, PantallaSeleccionEjer::class.java)
         //     startActivity(intent)
         //}
+
+        val BcpsManc: ImageButton = findViewById(R.id.bicepsmancsupino)
+
+
+
+
+
     }
+
 }

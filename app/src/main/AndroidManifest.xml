@@ -13,6 +13,10 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".ESPALDA.ejercicio001"
+            android:exported="false" />
+
+        <activity
             android:name=".PantallaPierna"
             android:exported="false" />
         <activity
@@ -47,16 +51,16 @@
             android:exported="false" />
         <activity
             android:name=".MainMenu"
-            android:exported="false" />
-        <!--*******************************************************************************-->
+            android:exported="false" /> <!-- ******************************************************************************* -->
         <activity
             android:name=".ActivitySetEjercicios"
             android:exported="false" />
-
-        <!-- PARTE DEL NAVBAR MI RUTINA
+        <!--
+ PARTE DEL NAVBAR MI RUTINA
         <activity
             android:name=".PantallaSeleccionEjer"
-            android:exported="false"/>-->
+            android:exported="false"/>
+        -->
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -1,6 +1,7 @@
 package com.equno.fitplanner
 
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -37,5 +38,7 @@ class ActivitySetEjercicios : AppCompatActivity() {
             .addOnFailureListener { exception ->
                 // Manejar el error
             }
+
     }
+
 }
