@@ -24,75 +24,71 @@ class PantallaBiceps : AppCompatActivity() {
         // **********************************************
 
         // Configurar los CheckBox para cada ejercicio
-        val checkBox8 = findViewById<CheckBox>(R.id.checkBox8)
-        val checkBox11 = findViewById<CheckBox>(R.id.checkBox11)
-        val checkBox12 = findViewById<CheckBox>(R.id.checkBox12)
-        val checkBox13 = findViewById<CheckBox>(R.id.checkBox13)
-        val checkBox14 = findViewById<CheckBox>(R.id.checkBox14)
-        val checkBox15 = findViewById<CheckBox>(R.id.checkBox15)
+        //val checkBox8 = findViewById<CheckBox>(R.id.checkBox8)
+        //val checkBox11 = findViewById<CheckBox>(R.id.checkBox11)
+        //val checkBox12 = findViewById<CheckBox>(R.id.checkBox12)
+        //val checkBox13 = findViewById<CheckBox>(R.id.checkBox13)
+        //val checkBox14 = findViewById<CheckBox>(R.id.checkBox14)
+        //val checkBox15 = findViewById<CheckBox>(R.id.checkBox15)
         // Repite para los otros ejercicios...
 
         // Manejar la selección de ejercicios - CHECKBOX 8
-        checkBox8.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                ejerciciosSeleccionados.add("Curl de bíceps con barra")
-            } else {
-                ejerciciosSeleccionados.remove("Curl de bíceps con mancuernas")
-            }
-        }
+        //checkBox8.setOnCheckedChangeListener { _, isChecked ->
+        //    if (isChecked) {
+        ////    } else {
+        //        ejerciciosSeleccionados.remove("Curl de bíceps con mancuernas")
+            //}
+        //}
 
         // Manejar la selección de ejercicios - CHECKBOX 11
-        checkBox11.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                ejerciciosSeleccionados.add("Curl de bíceps con mancuernas")
-            } else {
-                ejerciciosSeleccionados.remove("Curl de bíceps martillo con mancuernas")
-            }
-        }
+        //checkBox11.setOnCheckedChangeListener { _, isChecked ->
+        //    if (isChecked) {
+        //        ejerciciosSeleccionados.add("Curl de bíceps con mancuernas")
+        //    } else {
+        //        ejerciciosSeleccionados.remove("Curl de bíceps martillo con mancuernas")
+        //    }
+        //}
 
         // Manejar la selección de ejercicios - CHECKBOX 12
-        checkBox12.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                ejerciciosSeleccionados.add("Curl de bíceps con mancuernas")
-            } else {
-                ejerciciosSeleccionados.remove("Curl de bíceps bayesian")
-            }
-        }
+        //checkBox12.setOnCheckedChangeListener { _, isChecked ->
+        //    if (isChecked) {
+        //        ejerciciosSeleccionados.add("Curl de bíceps con mancuernas")
+        ////        ejerciciosSeleccionados.remove("Curl de bíceps bayesian")
+        //    }
+        //}
 
         // Manejar la selección de ejercicios - CHECKBOX 13
-        checkBox13.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                ejerciciosSeleccionados.add("Curl de bíceps con mancuernas")
-            } else {
-                ejerciciosSeleccionados.remove("Curl de bíceps predicador")
-            }
-        }
+        //checkBox13.setOnCheckedChangeListener { _, isChecked ->
+       //     if (isChecked) {
+       //     } else {
+        //        ejerciciosSeleccionados.remove("Curl de bíceps predicador")
+        //    }
+        //}
 
         // Manejar la selección de ejercicios - CHECKBOX 14
-        checkBox14.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                ejerciciosSeleccionados.add("Curl de bíceps con mancuernas")
-            } else {
-                ejerciciosSeleccionados.remove("Curl de bíceps predicador")
-            }
-        }
+        //checkBox14.setOnCheckedChangeListener { _, isChecked ->
+        //    if (isChecked) {
+        //        ejerciciosSeleccionados.add("Curl de bíceps con mancuernas")
+        //    } else {
+        //        ejerciciosSeleccionados.remove("Curl de bíceps predicador")
+        //    }
+        //}
 
         // Manejar la selección de ejercicios - CHECKBOX 15
-        checkBox15.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                ejerciciosSeleccionados.add("Curl de bíceps con mancuernas")
-            } else {
-                ejerciciosSeleccionados.remove("Curl de bíceps con barra z")
-            }
-        }
+        //checkBox15.setOnCheckedChangeListener { _, isChecked ->
+        //    if (isChecked) {
+        //        ejerciciosSeleccionados.add("Curl de bíceps con mancuernas")
+        //    } else {
+        //        ejerciciosSeleccionados.remove("Curl de bíceps con barra z")
+        //    }
+       //}
         // Repite para los otros ejercicios...
 
         // Botón para ir a la pantalla de selección
-        val botonVerSeleccion = findViewById<Button>(R.id.botonVerSeleccion)
-        botonVerSeleccion.setOnClickListener {
-            val intent = Intent(this, PantallaSeleccionEjer::class.java)
-            intent.putStringArrayListExtra("ejerciciosSeleccionados", ArrayList(ejerciciosSeleccionados))
-            startActivity(intent)
-        }
+        //val botonVerSeleccion = findViewById<Button>(R.id.botonVerSeleccion)
+        //botonVerSeleccion.setOnClickListener {
+        //    val intent = Intent(this, PantallaSeleccionEjer::class.java)
+        //     startActivity(intent)
+        //}
     }
 }

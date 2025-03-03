@@ -106,94 +106,13 @@
         tools:layout_editor_absoluteX="177dp"
         tools:layout_editor_absoluteY="121dp" />
 
-    <ScrollView
-        android:layout_width="410dp"
-        android:layout_height="484dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerEjercicios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="247dp">
-
-        <LinearLayout
-            android:layout_width="400dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <!-- Contenido desplazable -->
-            <TextView
-                android:id="@+id/listaEjercicios"
-                android:layout_width="110dp"
-                android:layout_height="match_parent"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="EJERCICIO 1" />
-
-            <TextView
-                android:layout_width="110dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="100dp"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="EJERCICIO 2" />
-
-            <TextView
-                android:layout_width="110dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="100dp"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="EJERCICIO 3" />
-
-            <TextView
-                android:layout_width="110dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="100dp"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="EJERCICIO 4" />
-
-            <TextView
-                android:layout_width="110dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="100dp"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="EJERCICIO 5" />
-
-            <TextView
-                android:layout_width="110dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="100dp"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="EJERCICIO 6" />
-
-            <TextView
-                android:layout_width="110dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="100dp"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="EJERCICIO 7" />
-
-            <TextView
-                android:layout_width="110dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="100dp"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="EJERCICIO 8" />
-
-            <TextView
-                android:layout_width="110dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="100dp"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="EJERCICIO 9" />
-
-
-        </LinearLayout>
-
-    </ScrollView>
+        tools:layout_editor_absoluteY="141dp"
+        android:background="@color/black"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
