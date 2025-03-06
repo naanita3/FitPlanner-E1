@@ -9,6 +9,17 @@
     tools:context=".ESPALDA.ejercicio001">
 
     <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#E3E3E5"
+        android:backgroundTint="#D5D5D5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058"
+        tools:layout_editor_absoluteX="11dp" />
+
+    <View
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -20,19 +31,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-
-    <View
-        android:id="@+id/view2"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#E3E3E5"
-        android:backgroundTint="#D5D5D5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.075" />
 
     <TextView
         android:id="@+id/textView3"
@@ -61,25 +59,6 @@
         app:layout_constraintVertical_bias="0.001"
         app:srcCompat="@drawable/pesa_icono" />
 
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="322dp"
-        android:layout_height="44dp"
-        android:background="@drawable/color_button_logblanco"
-
-        android:searchIcon="@android:drawable/ic_menu_search"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.075" />
-
-
-
-
-
-
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -97,7 +76,7 @@
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="JALON AL PECHO EN POLEA"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30sp"
@@ -106,116 +85,114 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164"
-        tools:text="JALON AL PECHO EN POLEA" />
+        app:layout_constraintVertical_bias="0.164" />
 
     <TextView
         android:id="@+id/musculostrabajados"
         android:layout_width="366dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Músculos trabajados: Dorsal ancho, trapecios, romboides, bíceps."
         android:textColor="@color/black"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.24"
-        tools:text="Músculos trabajados: Dorsal ancho, trapecios, romboides, bíceps." />
+        />
 
     <TextView
         android:id="@+id/beneficios"
         android:layout_width="366dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Beneficios: Mejora la amplitud de la espalda, fortalece la musculatura dorsal y contribuye a una mejor postura."
         android:textColor="@color/black"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.306"
-        tools:text="Beneficios: Mejora la amplitud de la espalda, fortalece la musculatura dorsal y contribuye a una mejor postura." />
+        app:layout_constraintVertical_bias="0.306" />
 
     <TextView
         android:id="@+id/ejecucion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Ejecución:"
         android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.362"
-        tools:text="Ejecución:" />
+        app:layout_constraintVertical_bias="0.373" />
 
     <TextView
         android:id="@+id/paso1"
         android:layout_width="366dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="1.Siéntate en la máquina de polea con los pies apoyados y la espalda recta."
         android:textAlignment="viewStart"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412"
-        tools:text="1.Siéntate en la máquina de polea con los pies apoyados y la espalda recta." />
+        app:layout_constraintVertical_bias="0.412" />
 
     <TextView
         android:id="@+id/paso2"
         android:layout_width="366dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="2. Sujeta la barra con un agarre amplio y prono (palmas hacia adelante)."
         android:textAlignment="viewStart"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.474"
-        tools:text="2. Sujeta la barra con un agarre amplio y prono (palmas hacia adelante)." />
+        app:layout_constraintVertical_bias="0.474"/>
 
     <TextView
         android:id="@+id/paso3"
         android:layout_width="366dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="3.Tira de la barra hacia el pecho, manteniendo los codos cerca del cuerpo."
         android:textAlignment="viewStart"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541"
-        tools:text="3.Tira de la barra hacia el pecho, manteniendo los codos cerca del cuerpo.:" />
+        app:layout_constraintVertical_bias="0.541" />
 
     <TextView
         android:id="@+id/paso4"
         android:layout_width="366dp"
         android:layout_height="35dp"
-        android:text="TextView"
+        android:text="4.Contrae los músculos de la espalda y regresa lentamente a la posición inicial."
         android:textAlignment="viewStart"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.606"
-        tools:text="4.Contrae los músculos de la espalda y regresa lentamente a la posición inicial.:" />
+        app:layout_constraintVertical_bias="0.606"/>
 
     <ImageButton
+        android:id="@+id/imageButton"
         android:layout_width="255dp"
         android:layout_height="172dp"
         android:background="@color/white"
