@@ -4,10 +4,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ESPALDA.ejercicio002">
+    tools:context=".ESPALDA.ejercicio003">
 
     <View
         android:id="@+id/view"
@@ -89,7 +89,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.164"
-        tools:text="REMO CON BARRA" />
+        tools:text="REMO CON MANCUERNA" />
 
     <TextView
         android:id="@+id/musculostrabajados"
@@ -103,7 +103,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.24"
-        tools:text="Músculos trabajados: Dorsal ancho, trapecios, romboides, deltoides posteriores,erectores espinales." />
+        tools:text="Músculos trabajados: Dorsal ancho, romboides, trapecios, deltoides posteriores." />
 
     <TextView
         android:id="@+id/beneficios"
@@ -117,7 +117,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.306"
-        tools:text="Beneficios: Desarrolla la densidad y grosor de la espalda media e inferior, fortaleciendo la zona lumbar y mejorando la estabilidad postural." />
+        tools:text="Beneficios:Permite un trabajo unilateral, corrigiendo desequilibrios musculares y mejorando la coordinación intermuscular. " />
 
     <TextView
         android:id="@+id/ejecucion"
@@ -147,7 +147,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.412"
-        tools:text="1.De pie, con una ligera flexión de rodillas y el torso inclinado a 45°." />
+        tools:text="1.Apoya una rodilla y una mano en un banco plano, con la espalda recta." />
     <TextView
         android:id="@+id/paso2"
         android:layout_width="366dp"
@@ -162,7 +162,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.474"
-        tools:text="2. Sujeta la barra con un agarre prono (palmas hacia abajo), al ancho de los hombros.." />
+        tools:text="2.Sujeta una mancuerna con la otra mano en agarre neutro (palma mirando al cuerpo).." />
     <TextView
         android:id="@+id/paso3"
         android:layout_width="366dp"
@@ -177,7 +177,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.541"
-        tools:text="3.Jala la barra hacia el abdomen, manteniendo los codos cerca del cuerpo." />
+        tools:text="3.Jala la mancuerna hacia el torso manteniendo el codo pegado al cuerpo." />
 
     <TextView
         android:id="@+id/paso4"
@@ -193,14 +193,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.606"
-        tools:text="4. Haz una pausa en la parte superior y regresa lentamente a la posición inicial." />
+        tools:text="4.Regresa lentamente a la posición inicial sin girar el tronco." />
 
     <ImageButton
         android:layout_width="255dp"
         android:layout_height="172dp"
         android:background="@color/white"
         android:scaleType="centerCrop"
-        android:src="@drawable/espaldaremobarra"
+        android:src="@drawable/espaldaremomancuerna"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.423"
@@ -240,7 +240,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.898" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

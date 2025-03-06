@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ESPALDA.ejercicio002">
+    tools:context=".ESPALDA.ejercicio004">
 
     <View
         android:id="@+id/view"
@@ -89,7 +89,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.164"
-        tools:text="REMO CON BARRA" />
+        tools:text="PULLOVER EN POLEA" />
 
     <TextView
         android:id="@+id/musculostrabajados"
@@ -103,7 +103,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.24"
-        tools:text="Músculos trabajados: Dorsal ancho, trapecios, romboides, deltoides posteriores,erectores espinales." />
+        tools:text="Músculos trabajados: Dorsal ancho,pectorales,triceps." />
 
     <TextView
         android:id="@+id/beneficios"
@@ -117,7 +117,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.306"
-        tools:text="Beneficios: Desarrolla la densidad y grosor de la espalda media e inferior, fortaleciendo la zona lumbar y mejorando la estabilidad postural." />
+        tools:text="Beneficios:Mejora la flexibilidad del hombro, fortalece el dorsal ancho y ayuda a la estabilidad del tronco.. " />
 
     <TextView
         android:id="@+id/ejecucion"
@@ -147,7 +147,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.412"
-        tools:text="1.De pie, con una ligera flexión de rodillas y el torso inclinado a 45°." />
+        tools:text="1.Sujeta la barra de una polea alta con un agarre prono." />
     <TextView
         android:id="@+id/paso2"
         android:layout_width="366dp"
@@ -162,7 +162,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.474"
-        tools:text="2. Sujeta la barra con un agarre prono (palmas hacia abajo), al ancho de los hombros.." />
+        tools:text="2.Manteniendo los brazos casi rectos, baja la barra hacia los muslos.." />
     <TextView
         android:id="@+id/paso3"
         android:layout_width="366dp"
@@ -177,41 +177,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.541"
-        tools:text="3.Jala la barra hacia el abdomen, manteniendo los codos cerca del cuerpo." />
+        tools:text="3.Mantén el control durante el movimiento y regresa lentamente a la posición inicial." />
 
-    <TextView
-        android:id="@+id/paso4"
-        android:layout_width="366dp"
-        android:layout_height="35dp"
-        android:text="TextView"
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.606"
-        tools:text="4. Haz una pausa en la parte superior y regresa lentamente a la posición inicial." />
 
     <ImageButton
         android:layout_width="255dp"
         android:layout_height="172dp"
         android:background="@color/white"
         android:scaleType="centerCrop"
-        android:src="@drawable/espaldaremobarra"
+        android:src="@drawable/espaldapullover"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.423"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.837" />
-
-
-
-
-
+        app:layout_constraintVertical_bias="0.805" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -240,7 +219,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.898" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
