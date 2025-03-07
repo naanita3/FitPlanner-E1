@@ -34,9 +34,6 @@
             android:name=".ESPALDA.ejercicio002"
             android:exported="false" />
         <activity
-            android:name=".ESPALDA.Ejercicio002Activity"
-            android:exported="false" />
-        <activity
             android:name=".ESPALDA.ejercicio001"
             android:exported="false" />
         <activity

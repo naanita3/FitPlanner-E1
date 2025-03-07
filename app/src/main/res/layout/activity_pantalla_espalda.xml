@@ -75,20 +75,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.075" />
 
+
     <ImageButton
-        android:id="@+id/jalonpecho"
+        android:id="@+id/jalonpechopolea"
         android:layout_width="173dp"
         android:layout_height="120dp"
+        android:layout_marginStart="16dp"
         android:background="@color/white"
-        android:scaleType="centerCrop"
         android:contentDescription="Jalón al pecho en polea"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.288"
         app:srcCompat="@drawable/espaldajalon" />
-
 
     <ImageButton
         android:id="@+id/pressinclinadopecho"

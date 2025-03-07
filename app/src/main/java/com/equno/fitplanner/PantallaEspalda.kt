@@ -19,7 +19,7 @@ class PantallaEspalda : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val imgbtn: ImageButton = findViewById(R.id.jalonpecho)
+        val imgbtn: ImageButton = findViewById(R.id.jalonpechopolea)
 
         imgbtn.setOnClickListener {
             val intent = Intent(this, ejercicio001::class.java)
