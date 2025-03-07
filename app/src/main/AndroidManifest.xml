@@ -13,9 +13,32 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".ESPALDA.ejercicio008"
+            android:exported="false" />
+        <activity
+            android:name=".ESPALDA.ejercicio007"
+            android:exported="false" />
+        <activity
+            android:name=".ESPALDA.ejercicio006"
+            android:exported="false" />
+        <activity
+            android:name=".ESPALDA.ejercicio005"
+            android:exported="false" />
+        <activity
+            android:name=".ESPALDA.ejercicio004"
+            android:exported="false" />
+        <activity
+            android:name=".ESPALDA.ejercicio003"
+            android:exported="false" />
+        <activity
+            android:name=".ESPALDA.ejercicio002"
+            android:exported="false" />
+        <activity
+            android:name=".ESPALDA.Ejercicio002Activity"
+            android:exported="false" />
+        <activity
             android:name=".ESPALDA.ejercicio001"
             android:exported="false" />
-
         <activity
             android:name=".PantallaPierna"
             android:exported="false" />
