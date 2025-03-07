@@ -78,12 +78,57 @@
         <activity
             android:name=".ActivitySetEjercicios"
             android:exported="false" />
-        <!--
- PARTE DEL NAVBAR MI RUTINA
         <activity
-            android:name=".PantallaSeleccionEjer"
-            android:exported="false"/>
-        -->
+             android:name=".PantallaSelNivel"
+             android:exported="false" />
+        <activity
+            android:name=".PantallaEjerDiasP"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaEjerDiasM"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaEjerDiasA"
+            android:exported="false" />
+        <!-- ************* PANTALLAS DEL NIVEL PRINCIPIANTE 1, 2, 3 Y 4****************************************************************** -->
+        <activity
+            android:name=".PantallaDia1p"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaDia2p"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaDia3p"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaDia4p"
+            android:exported="false" />
+        <!-- ************* PANTALLAS DEL NIVEL MEDIO 1, 2, 3 Y 4****************************************************************** -->
+        <activity
+            android:name=".PantallaDia1m"
+            android:exported="false" />
+        <activity
+             android:name=".PantallaDia2m"
+             android:exported="false" />
+        <activity
+              android:name=".PantallaDia3m"
+              android:exported="false" />
+        <activity
+             android:name=".PantallaDia4m"
+             android:exported="false" />
+        <!-- ************* PANTALLAS DEL NIVEL AVANZADO 1, 2, 3 Y 4****************************************************************** -->
+        <activity
+             android:name=".PantallaDia1a"
+             android:exported="false" />
+        <activity
+             android:name=".PantallaDia2a"
+             android:exported="false" />
+        <activity
+             android:name=".PantallaDia3a"
+             android:exported="false" />
+        <activity
+             android:name=".PantallaDia4a"
+             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

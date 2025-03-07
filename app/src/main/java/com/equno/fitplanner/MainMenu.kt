@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class MainMenu : AppCompatActivity() {
@@ -27,6 +26,14 @@ class MainMenu : AppCompatActivity() {
         btnMiRutina.setOnClickListener {
             // Crea un Intent para navegar a ActivitySetEjercicios
             val intent = Intent(this, ActivitySetEjercicios::class.java)
+            startActivity(intent)
+        }
+
+        //*********BOTON DE PRINCIPIANTE**********************************************************
+        val imgbtnrutPredef : ImageButton = findViewById(R.id.RutinasPredeterminadas)
+
+        imgbtnrutPredef.setOnClickListener {
+            val intent = Intent(this, PantallaSelNivel::class.java)
             startActivity(intent)
         }
     }

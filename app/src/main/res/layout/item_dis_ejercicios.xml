@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="8dp"
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/tvNombreEjercicio"
@@ -20,19 +21,5 @@
         android:textSize="14sp"
         android:text="Tipo de ejercicio" />
 
-    <TextView
-        android:id="@+id/tvNombreEjercicio2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:text="Nombre del ejercicio"
-        android:layout_marginTop="15dp"/>
-
-    <TextView
-        android:id="@+id/tvTipoEjercicio2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:text="Tipo de ejercicio" />
 
 </LinearLayout>
