@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ESPALDA.ejercicio007">
+    tools:context=".PECHO.ejercicio007">
 
     <View
         android:id="@+id/view"
@@ -19,6 +19,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#E3E3E5"
+        android:backgroundTint="#D5D5D5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
 
     <TextView
         android:id="@+id/textView3"
@@ -47,19 +61,6 @@
         app:layout_constraintVertical_bias="0.001"
         app:srcCompat="@drawable/pesa_icono" />
 
-    <View
-        android:id="@+id/view2"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#E3E3E5"
-        android:backgroundTint="#D5D5D5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.075" />
-
     <SearchView
         android:id="@+id/searchView"
         android:layout_width="322dp"
@@ -74,124 +75,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.075" />
 
-    <TextView
-        android:id="@+id/titulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164"
-        tools:text="REMO COM BARRA T" />
-
-    <TextView
-        android:id="@+id/musculostrabajados"
-        android:layout_width="366dp"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24"
-        tools:text="Músculos trabajados: Dorsal ancho,trapecios,romboides,deltoides posteriores." />
-
-    <TextView
-        android:id="@+id/beneficios"
-        android:layout_width="366dp"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.306"
-        tools:text="Beneficios: Desarrolla el grosor de la espalda media y baja, mejorando la postura y estabilidad. " />
-
-    <TextView
-        android:id="@+id/ejecucion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.362"
-        tools:text="Ejecución:" />
-
-    <TextView
-        android:id="@+id/paso1"
-        android:layout_width="366dp"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412"
-        tools:text="1. Coloca los pies firmes en la plataforma y sujeta la barra con ambas manos." />
 
 
-    <TextView
-        android:id="@+id/paso2"
-        android:layout_width="366dp"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.462"
-        tools:text="2.Inclina ligeramente el torso y jala la barra hacia el pecho." />
 
-    <TextView
-        android:id="@+id/paso3"
-        android:layout_width="366dp"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.514"
-        tools:text="3.Controla el descenso evitando balanceos innecesarios." />
 
-    <ImageButton
-        android:layout_width="255dp"
-        android:layout_height="172dp"
-        android:background="@color/white"
-        android:scaleType="centerCrop"
-        android:src="@drawable/espaldabarrat"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.805" />
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -204,6 +92,141 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/bottom_nav_menu" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRESS DE BANCA CON BARRA"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        tools:text="PRESS DE BANCA CON BARRA" />
+
+    <TextView
+        android:id="@+id/musculostrabajados"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:text="Músculos trabajados: Pectoral mayor, deltoides anteriores, tríceps braquial."
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261"
+        tools:text="Músculos trabajados: Pectoral mayor, deltoides anteriores, tríceps braquial." />
+
+    <TextView
+        android:id="@+id/beneficios"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:text="Beneficios:Desarrolla fuerza y volumen en el pecho, mejorando la capacidad de empuje."
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33"
+        tools:text="Beneficios:Desarrolla fuerza y volumen en el pecho, mejorando la capacidad de empuje." />
+
+    <TextView
+        android:id="@+id/ejecucion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ejecución:"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373"
+        tools:text="Ejecución:" />
+
+    <TextView
+        android:id="@+id/paso1"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:text="1.Acuéstate en un banco plano con los pies firmemente apoyados en el suelo."
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424"
+        tools:text="1.Acuéstate en un banco plano con los pies firmemente apoyados en el suelo." />
+
+    <TextView
+        android:id="@+id/paso2"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:text="2. Sujeta la barra con un agarre ligeramente mayor al ancho de los hombros."
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.482"
+        tools:text="2. Sujeta la barra con un agarre ligeramente mayor al ancho de los hombros." />
+
+    <TextView
+        android:id="@+id/paso3"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:text="3.Baja la barra hasta tocar el pecho de manera controlada."
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551"
+        tools:text="3.Baja la barra hasta tocar el pecho de manera controlada." />
+
+    <TextView
+        android:id="@+id/paso4"
+        android:layout_width="366dp"
+        android:layout_height="35dp"
+        android:text="4.Empuja la barra hacia arriba hasta extender completamente los brazos,sin sobrextender los codos."
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.622"
+        tools:text="4.Empuja la barra hacia arriba hasta extender completamente los brazos,sin sobrextender los codos." />
+
+    <ImageButton
+        android:layout_width="255dp"
+        android:layout_height="172dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pechopressbanca"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
 
     <TextView
         android:id="@+id/textView14"
@@ -220,4 +243,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.898" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

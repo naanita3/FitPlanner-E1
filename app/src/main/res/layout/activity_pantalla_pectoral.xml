@@ -89,7 +89,7 @@
         app:srcCompat="@drawable/pechopressbanca" />
 
     <ImageButton
-        android:id="@+id/pressinclinadopecho"
+        android:id="@+id/flexiones"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"

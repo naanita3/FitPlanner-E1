@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ESPALDA.ejercicio003">
+    tools:context=".PECHO.ejercicio010">
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
@@ -18,6 +18,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#E3E3E5"
+        android:backgroundTint="#D5D5D5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
 
     <TextView
         android:id="@+id/textView3"
@@ -46,19 +60,6 @@
         app:layout_constraintVertical_bias="0.001"
         app:srcCompat="@drawable/pesa_icono" />
 
-    <View
-        android:id="@+id/view2"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#E3E3E5"
-        android:backgroundTint="#D5D5D5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.075" />
-
     <SearchView
         android:id="@+id/searchView"
         android:layout_width="322dp"
@@ -73,138 +74,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.075" />
 
-    <TextView
-        android:id="@+id/titulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="REMO CON MANCUERNA"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164"
-        tools:text="REMO CON MANCUERNA" />
-
-    <TextView
-        android:id="@+id/musculostrabajados"
-        android:layout_width="366dp"
-        android:layout_height="wrap_content"
-        android:text="Músculos trabajados: Dorsal ancho, romboides, trapecios, deltoides posteriores."
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24"
-        tools:text="Músculos trabajados: Dorsal ancho, romboides, trapecios, deltoides posteriores." />
-
-    <TextView
-        android:id="@+id/beneficios"
-        android:layout_width="366dp"
-        android:layout_height="wrap_content"
-        android:text="Beneficios:Permite un trabajo unilateral, corrigiendo desequilibrios musculares y mejorando la coordinación intermuscular."
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.306"
-        tools:text="Beneficios:Permite un trabajo unilateral, corrigiendo desequilibrios musculares y mejorando la coordinación intermuscular. " />
-
-    <TextView
-        android:id="@+id/ejecucion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ejecución:"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.362"
-        tools:text="Ejecución:" />
-
-    <TextView
-        android:id="@+id/paso1"
-        android:layout_width="366dp"
-        android:layout_height="wrap_content"
-        android:text="1.Apoya una rodilla y una mano en un banco plano, con la espalda recta."
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412"
-        tools:text="1.Apoya una rodilla y una mano en un banco plano, con la espalda recta." />
-    <TextView
-        android:id="@+id/paso2"
-        android:layout_width="366dp"
-        android:layout_height="wrap_content"
-        android:text="2.Sujeta una mancuerna con la otra mano en agarre neutro (palma mirando al cuerpo)."
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.474"
-        tools:text="2.Sujeta una mancuerna con la otra mano en agarre neutro (palma mirando al cuerpo)." />
-    <TextView
-        android:id="@+id/paso3"
-        android:layout_width="366dp"
-        android:layout_height="wrap_content"
-        android:text="3.Jala la mancuerna hacia el torso manteniendo el codo pegado al cuerpo."
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541"
-        tools:text="3.Jala la mancuerna hacia el torso manteniendo el codo pegado al cuerpo." />
-
-    <TextView
-        android:id="@+id/paso4"
-        android:layout_width="366dp"
-        android:layout_height="35dp"
-        android:text="4.Regresa lentamente a la posición inicial sin girar el tronco."
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.355"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.606"
-        tools:text="4.Regresa lentamente a la posición inicial sin girar el tronco." />
-
-    <ImageButton
-        android:layout_width="255dp"
-        android:layout_height="172dp"
-        android:background="@color/white"
-        android:scaleType="centerCrop"
-        android:src="@drawable/espaldaremomancuerna"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.423"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.837" />
 
 
 
@@ -222,6 +91,141 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/bottom_nav_menu" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FONDOS PARA PECHO"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        tools:text="FONDOS PARA PECHO" />
+
+    <TextView
+        android:id="@+id/musculostrabajados"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:text="Músculos trabajados: Tríceps,Pectorales,Deltoides"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261"
+        tools:text="Músculos trabajados: Tríceps,Pectorales,Deltoides." />
+
+    <TextView
+        android:id="@+id/beneficios"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:text="Beneficios:Fortalece los tríceps, el pecho y los hombros, mejora la estabilidad de los hombros y la movilidad de los codos."
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33"
+        tools:text="Beneficios:Fortalece los tríceps, el pecho y los hombros, mejora la estabilidad de los hombros y la movilidad de los codos." />
+
+    <TextView
+        android:id="@+id/ejecucion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ejecución:"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373"
+        tools:text="Ejecución:" />
+
+    <TextView
+        android:id="@+id/paso1"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:text="1.Siéntate en una máquina de fondos o en dos barras paralelas, colocando las manos a la altura de los hombros."
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424"
+        tools:text="1.Siéntate en una máquina de fondos o en dos barras paralelas, colocando las manos a la altura de los hombros." />
+
+    <TextView
+        android:id="@+id/paso2"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:text="2. Eleva tu cuerpo, manteniendo los brazos extendidos, y cruza los pies detrás de ti."
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.482"
+        tools:text="2. Eleva tu cuerpo, manteniendo los brazos extendidos, y cruza los pies detrás de ti." />
+
+    <TextView
+        android:id="@+id/paso3"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:text="3.Baja el cuerpo controladamente flexionando los codos hasta que los hombros queden a la altura de los codos."
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551"
+        tools:text="3.Baja el cuerpo controladamente flexionando los codos hasta que los hombros queden a la altura de los codos." />
+
+    <TextView
+        android:id="@+id/paso4"
+        android:layout_width="366dp"
+        android:layout_height="35dp"
+        android:text="4.Empuja hacia arriba hasta que los brazos queden completamente extendidos, manteniendo el core activado."
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.622"
+        tools:text="4.Empuja hacia arriba hasta que los brazos queden completamente extendidos, manteniendo el core activado." />
+
+    <ImageButton
+        android:layout_width="255dp"
+        android:layout_height="172dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pechofondos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
 
     <TextView
         android:id="@+id/textView14"
