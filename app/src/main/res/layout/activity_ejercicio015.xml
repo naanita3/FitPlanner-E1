@@ -7,5 +7,225 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".PIERNA.ejercicio015">
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#181819"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#E3E3E5"
+        android:backgroundTint="#D5D5D5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FitPlanner"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="57dp"
+        android:layout_height="46dp"
+        app:tint="@color/fitplanner_icono2_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001"
+        app:srcCompat="@drawable/pesa_icono" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="322dp"
+        android:layout_height="44dp"
+        android:background="@drawable/color_button_logblanco"
+
+        android:searchIcon="@android:drawable/ic_menu_search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+
+
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SWING PESAS RUSAS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        />
+
+    <TextView
+        android:id="@+id/musculostrabajados"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:text="Músculos trabajados: Isquiotibiales,Glúteos,Erectores espinales,Core"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261"
+        />
+
+    <TextView
+        android:id="@+id/beneficios"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:text="Beneficios:Desarrolla fuerza y potencia explosiva, fortalece glúteos y core, mejora la resistencia cardiovascular, quema grasa, corrige desequilibrios musculares y ayuda a la postura."
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33"
+        />
+
+    <TextView
+        android:id="@+id/ejecucion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ejecución:"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373"
+        />
+
+    <TextView
+        android:id="@+id/paso1"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:text="1. Pies al ancho de los hombros, flexión ligera de rodillas, cadera atrás y agarre firme de la pesa.."
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424"
+        />
+
+
+    <TextView
+        android:id="@+id/paso2"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:text="2. Balancea la pesa entre las piernas y empuja explosivamente la cadera hacia adelante."
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.482"
+        />
+
+    <TextView
+        android:id="@+id/paso3"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:text="3.: Deja que la pesa suba a la altura del pecho, contrae glúteos y baja controladamente para repetir.."
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551"
+        />
+
+    <ImageButton
+        android:layout_width="255dp"
+        android:layout_height="172dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:src="@drawable/swing_pesas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Da clic en la imagen para ver tutorial"
+        android:textColor="@color/fitplanner_icono2_background"
+        android:textSize="10sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

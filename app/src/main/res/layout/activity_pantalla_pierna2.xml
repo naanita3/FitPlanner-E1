@@ -75,7 +75,7 @@
         app:layout_constraintVertical_bias="0.075" />
 
     <ImageButton
-        android:id="@+id/pressbancapecho"
+        android:id="@+id/curlsentado"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
@@ -89,7 +89,7 @@
         app:srcCompat="@drawable/curl_pierna" />
 
     <ImageButton
-        android:id="@+id/pressinclinadopecho"
+        android:id="@+id/frontalsquat"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
@@ -103,7 +103,7 @@
         app:srcCompat="@drawable/frontal" />
 
     <ImageButton
-        android:id="@+id/fondospecho"
+        android:id="@+id/pesomuertorumano"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
@@ -117,7 +117,7 @@
         app:srcCompat="@drawable/peso_muerto" />
 
     <ImageButton
-        android:id="@+id/aperturaspecho"
+        android:id="@+id/swingpesasrusas"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
@@ -131,7 +131,7 @@
         app:srcCompat="@drawable/swing_pesas"/>
 
     <ImageButton
-        android:id="@+id/crossoverpecho"
+        android:id="@+id/quadextension"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
@@ -145,7 +145,7 @@
         app:srcCompat="@drawable/extension_pierna" />
 
     <ImageButton
-        android:id="@+id/inclinadobancapecho"
+        android:id="@+id/curltumbado"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
