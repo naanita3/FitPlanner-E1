@@ -25,6 +25,7 @@ class PantallaPectoral : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         val imgbtn7: ImageButton = findViewById(R.id.pressbancapecho)
 
         imgbtn7.setOnClickListener {
@@ -32,7 +33,7 @@ class PantallaPectoral : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val imgbtn8: ImageButton = findViewById(R.id.pressinclinadopecho)
+        val imgbtn8: ImageButton = findViewById(R.id.inclinadobancapecho)
 
         imgbtn8.setOnClickListener {
             val intent = Intent(this, ejercicio008::class.java)
@@ -52,6 +53,7 @@ class PantallaPectoral : AppCompatActivity() {
             val intent = Intent(this, ejercicio010::class.java)
             startActivity(intent)
         }
+
         val imgbtn11: ImageButton = findViewById(R.id.crossoverpecho)
 
         imgbtn11.setOnClickListener {
