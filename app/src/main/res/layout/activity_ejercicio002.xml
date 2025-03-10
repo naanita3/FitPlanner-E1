@@ -194,6 +194,7 @@
         tools:text="4. Haz una pausa en la parte superior y regresa lentamente a la posición inicial." />
 
     <ImageButton
+       android:id="@+id/remoconbarra"
         android:layout_width="255dp"
         android:layout_height="172dp"
         android:background="@color/white"
