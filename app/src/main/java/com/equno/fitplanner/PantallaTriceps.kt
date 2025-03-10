@@ -13,6 +13,12 @@ import com.equno.fitplanner.BICEPS.ejercicio021
 import com.equno.fitplanner.BICEPS.ejercicio022
 import com.equno.fitplanner.BICEPS.ejercicio023
 import com.equno.fitplanner.BICEPS.ejercicio024
+import com.equno.fitplanner.TRICEPS.ejercicio025
+import com.equno.fitplanner.TRICEPS.ejercicio026
+import com.equno.fitplanner.TRICEPS.ejercicio027
+import com.equno.fitplanner.TRICEPS.ejercicio028
+import com.equno.fitplanner.TRICEPS.ejercicio029
+import com.equno.fitplanner.TRICEPS.ejercicio030
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class PantallaTriceps : AppCompatActivity() {
@@ -52,49 +58,49 @@ class PantallaTriceps : AppCompatActivity() {
         }
 
 
-        val imgbtn25: ImageButton = findViewById(R.id.)
+        val imgbtn25: ImageButton = findViewById(R.id.tricepsjms)
 
         imgbtn25.setOnClickListener {
-            val intent = Intent(this, ejercicio020::class.java)
+            val intent = Intent(this, ejercicio025::class.java)
             startActivity(intent)
 
         }
 
-        val imgbtn26: ImageButton = findViewById(R.id.bicepsbayesian)
+        val imgbtn26: ImageButton = findViewById(R.id.tricepspoleaal)
 
         imgbtn26.setOnClickListener {
-            val intent = Intent(this, ejercicio021::class.java)
+            val intent = Intent(this, ejercicio026::class.java)
             startActivity(intent)
 
         }
 
-        val imgbtn27: ImageButton = findViewById(R.id.bicepspredicador)
+        val imgbtn27: ImageButton = findViewById(R.id.tricepscop)
 
         imgbtn27.setOnClickListener {
-            val intent = Intent(this, ejercicio022::class.java)
+            val intent = Intent(this, ejercicio027::class.java)
             startActivity(intent)
 
         }
 
-        val imgbtn28: ImageButton = findViewById(R.id.bicepspredmartillo)
+        val imgbtn28: ImageButton = findViewById(R.id.tricepsskul)
 
         imgbtn28.setOnClickListener {
-            val intent = Intent(this, ejercicio023::class.java)
+            val intent = Intent(this, ejercicio028::class.java)
             startActivity(intent)
 
         }
 
-        val imgbtn29: ImageButton = findViewById(R.id.bicepsbarra)
+        val imgbtn29: ImageButton = findViewById(R.id.tricepsdip)
 
         imgbtn29.setOnClickListener {
-            val intent = Intent(this, ejercicio024::class.java)
+            val intent = Intent(this, ejercicio029::class.java)
             startActivity(intent)
 
         }
-        val imgbtn30: ImageButton = findViewById(R.id.bicepsmancsupino)
+        val imgbtn30: ImageButton = findViewById(R.id.tricepspoleabaa)
 
         imgbtn30.setOnClickListener {
-            val intent = Intent(this, ejercicio019::class.java)
+            val intent = Intent(this, ejercicio030::class.java)
             startActivity(intent)
 
         }
