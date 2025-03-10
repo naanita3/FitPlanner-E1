@@ -97,7 +97,7 @@
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CURL DE BICEPS SUPINO"
+        android:text="ELEVACIONES FRONTALES"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30sp"
@@ -106,14 +106,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164"
-        tools:text="CURL DE BICEPS SUPINO" />
+        app:layout_constraintVertical_bias="0.164" />
 
     <TextView
         android:id="@+id/musculostrabajados"
         android:layout_width="366dp"
         android:layout_height="wrap_content"
-        android:text="Bíceps braquial, braquiorradial."
+        android:text="Músculos trabajados: Deltoides (principalmente el anterior)."
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -127,7 +126,8 @@
         android:id="@+id/beneficios"
         android:layout_width="366dp"
         android:layout_height="wrap_content"
-        android:text="Beneficios: Aísla los bíceps, favorece el desarrollo del músculo en la parte interna del brazo y mejora la fuerza en los antebrazos."
+        android:text="Beneficios: Aísla el deltoides anterior, mejora la definición de los hombros y
+aumenta la fuerza en la parte delantera de los hombros"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -154,7 +154,8 @@
         android:id="@+id/paso1"
         android:layout_width="366dp"
         android:layout_height="wrap_content"
-        android:text="1.Siéntate en un banco con un par de mancuernas, sosteniéndolas con un agarre supino (palmas hacia arriba)."
+        android:text="1. Sostén una mancuerna en cada mano frente a tus muslos con las
+palmas hacia el cuerpo."
         android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -169,7 +170,8 @@
         android:id="@+id/paso2"
         android:layout_width="366dp"
         android:layout_height="wrap_content"
-        android:text="2. Coloca los codos a los lados del torso y flexiona los codos para levantar las mancuernas hacia los hombros."
+        android:text="2. Con una ligera flexión en los codos, levanta una mancuerna hacia
+adelante hasta que llegue al nivel de los hombros."
         android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -184,7 +186,8 @@
         android:id="@+id/paso3"
         android:layout_width="366dp"
         android:layout_height="wrap_content"
-        android:text="3.Aprieta los bíceps en la parte superior del movimiento y baja lentamente las mancuernas a la posición inicial."
+        android:text="3. Baja la mancuerna lentamente a la posición inicial y repite con el otro
+brazo."
         android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -200,7 +203,8 @@
         android:id="@+id/paso4"
         android:layout_width="366dp"
         android:layout_height="35dp"
-        android:text="4. Mantén el torso quieto y evita usar el impulso."
+        android:text="4. Evita el balanceo y controla el movimiento para trabajar de manera
+efectiva el deltoides."
         android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -215,8 +219,8 @@
         android:layout_width="255dp"
         android:layout_height="172dp"
         android:background="@color/white"
-        android:scaleType="centerCrop"
-        android:src="@drawable/bicepsmancsupino"
+        android:scaleType="fitCenter"
+        android:src="@drawable/hombroelevacionfront"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.423"
