@@ -216,6 +216,7 @@
         tools:text="4.Contrae los músculos de la espalda y regresa lentamente a la posición inicial.:" />
 
     <ImageButton
+        android:id="@+id/jalonpechopolea"
         android:layout_width="255dp"
         android:layout_height="172dp"
         android:background="@color/white"
