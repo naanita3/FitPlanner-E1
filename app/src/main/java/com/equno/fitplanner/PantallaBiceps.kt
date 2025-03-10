@@ -10,6 +10,19 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.equno.fitplanner.BICEPS.ejercicio019
+import com.equno.fitplanner.BICEPS.ejercicio020
+import com.equno.fitplanner.BICEPS.ejercicio021
+import com.equno.fitplanner.BICEPS.ejercicio022
+import com.equno.fitplanner.BICEPS.ejercicio023
+import com.equno.fitplanner.BICEPS.ejercicio024
+import com.equno.fitplanner.ESPALDA.ejercicio001
+import com.equno.fitplanner.ESPALDA.ejercicio002
+import com.equno.fitplanner.ESPALDA.ejercicio003
+import com.equno.fitplanner.ESPALDA.ejercicio004
+import com.equno.fitplanner.ESPALDA.ejercicio005
+import com.equno.fitplanner.ESPALDA.ejercicio006
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 
@@ -95,8 +108,75 @@ class PantallaBiceps : AppCompatActivity() {
         //     startActivity(intent)
         //}
 
-        val BcpsManc: ImageButton = findViewById(R.id.bicepsmancsupino)
+        val imgbtn19: ImageButton = findViewById(R.id.bicepsmancsupino)
 
+        imgbtn19.setOnClickListener {
+            val intent = Intent(this, ejercicio019::class.java)
+            startActivity(intent)
+
+        }
+
+        val imgbtn20: ImageButton = findViewById(R.id.bicepsmartillo)
+
+        imgbtn20.setOnClickListener {
+            val intent = Intent(this, ejercicio020::class.java)
+            startActivity(intent)
+
+        }
+
+        val imgbtn21: ImageButton = findViewById(R.id.bicepsbayesian)
+
+        imgbtn21.setOnClickListener {
+            val intent = Intent(this, ejercicio021::class.java)
+            startActivity(intent)
+
+        }
+
+        val imgbtn22: ImageButton = findViewById(R.id.bicepspredicador)
+
+        imgbtn22.setOnClickListener {
+            val intent = Intent(this, ejercicio022::class.java)
+            startActivity(intent)
+
+        }
+
+        val imgbtn23: ImageButton = findViewById(R.id.bicepspredmartillo)
+
+        imgbtn23.setOnClickListener {
+            val intent = Intent(this, ejercicio023::class.java)
+            startActivity(intent)
+
+        }
+
+        val imgbtn24: ImageButton = findViewById(R.id.bicepsbarra)
+
+        imgbtn24.setOnClickListener {
+            val intent = Intent(this, ejercicio024::class.java)
+            startActivity(intent)
+
+        }
+
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.navigation_home -> {
+                    if (this.javaClass != MainMenu::class.java) {
+                        val intent = Intent(this, MainMenu::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+                R.id.navigation_explore -> {
+                    if (this.javaClass != ExplorarEjercicios::class.java) {
+                        val intent = Intent(this, ExplorarEjercicios::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+                // Agrega los otros casos de navegación aquí si es necesario
+                else -> false
+            }
+        }
 
 
 

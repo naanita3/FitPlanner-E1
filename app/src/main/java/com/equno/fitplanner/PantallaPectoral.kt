@@ -14,6 +14,7 @@ import com.equno.fitplanner.PECHO.ejercicio009
 import com.equno.fitplanner.PECHO.ejercicio010
 import com.equno.fitplanner.PECHO.ejercicio011
 import com.equno.fitplanner.PECHO.ejercicio012
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class PantallaPectoral : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -67,6 +68,27 @@ class PantallaPectoral : AppCompatActivity() {
             val intent = Intent(this, ejercicio012::class.java)
             startActivity(intent)
         }
-
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.navigation_home -> {
+                    if (this.javaClass != MainMenu::class.java) {
+                        val intent = Intent(this, MainMenu::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+                R.id.navigation_explore -> {
+                    if (this.javaClass != ExplorarEjercicios::class.java) {
+                        val intent = Intent(this, ExplorarEjercicios::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+                // Agrega los otros casos de navegación aquí si es necesario
+                else -> false
+            }
+        }
     }
+
 }

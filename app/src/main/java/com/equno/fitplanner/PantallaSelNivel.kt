@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class PantallaSelNivel : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,6 +36,28 @@ class PantallaSelNivel : AppCompatActivity() {
         btnAvanzado.setOnClickListener {
             val intent = Intent(this, PantallaEjerDiasA::class.java)
             startActivity(intent)
+        }
+
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.navigation_home -> {
+                    if (this.javaClass != MainMenu::class.java) {
+                        val intent = Intent(this, MainMenu::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+                R.id.navigation_explore -> {
+                    if (this.javaClass != ExplorarEjercicios::class.java) {
+                        val intent = Intent(this, ExplorarEjercicios::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+                // Agrega los otros casos de navegación aquí si es necesario
+                else -> false
+            }
         }
     }
 }

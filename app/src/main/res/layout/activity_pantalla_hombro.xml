@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.075" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView312"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="FitPlanner"
@@ -75,94 +75,94 @@
         app:layout_constraintVertical_bias="0.075" />
 
     <ImageButton
-        android:id="@+id/pressbancapecho"
+        android:id="@+id/pressmilitar"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
-        android:scaleType="centerCrop"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.288"
-        app:srcCompat="@drawable/elevaciones_front" />
+        app:srcCompat="@drawable/hombropressmilitar" />
 
     <ImageButton
         android:id="@+id/pressinclinadopecho"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
-        android:scaleType="centerCrop"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.857"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.854"
-        app:srcCompat="@drawable/press_mancuerna" />
+        app:srcCompat="@drawable/hombrolatpolea" />
 
     <ImageButton
         android:id="@+id/fondospecho"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
-        android:scaleType="centerCrop"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.857"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.567"
-        app:srcCompat="@drawable/elevaciones_lat_polea" />
+        app:srcCompat="@drawable/hombroelevacionpost" />
 
     <ImageButton
         android:id="@+id/aperturaspecho"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
-        android:scaleType="centerCrop"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.567"
-        app:srcCompat="@drawable/elevaciones_lat"/>
+        app:srcCompat="@drawable/hombroelevacionfront"/>
 
     <ImageButton
         android:id="@+id/crossoverpecho"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
-        android:scaleType="centerCrop"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.854"
-        app:srcCompat="@drawable/hombros_polea" />
+        app:srcCompat="@drawable/hombrojalonmenton" />
 
     <ImageButton
         android:id="@+id/inclinadobancapecho"
         android:layout_width="173dp"
         android:layout_height="120dp"
         android:background="@color/white"
-        android:scaleType="centerCrop"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.857"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.288"
-        app:srcCompat="@drawable/elevaciones_front_mancuernas" />
+        app:srcCompat="@drawable/hombroelevacionlat" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Elevaciones frontales"
+        android:text="Press Militar"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -175,11 +175,11 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Press con mancuerna"
+        android:text="Elevaciones laterales en polea"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintHorizontal_bias="0.869"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.917" />
@@ -188,7 +188,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hombros polea"
+        android:text="Jalon al mentón"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -201,7 +201,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Elevaciones lat polea"
+        android:text="Elevaciones posteriores"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -214,7 +214,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Elevaciones laterales"
+        android:text="Elevaciones frontales "
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -227,11 +227,11 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Elevaciones front mancuerna"
+        android:text="Elevaciones laterales mancuerna"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.428" />

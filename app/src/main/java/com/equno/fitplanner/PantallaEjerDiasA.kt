@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class PantallaEjerDiasA : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,6 +41,28 @@ class PantallaEjerDiasA : AppCompatActivity() {
         btnDia4a.setOnClickListener {
             val intent = Intent(this, PantallaDia4a::class.java)
             startActivity(intent)
+        }
+
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.navigation_home -> {
+                    if (this.javaClass != MainMenu::class.java) {
+                        val intent = Intent(this, MainMenu::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+                R.id.navigation_explore -> {
+                    if (this.javaClass != ExplorarEjercicios::class.java) {
+                        val intent = Intent(this, ExplorarEjercicios::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+                // Agrega los otros casos de navegación aquí si es necesario
+                else -> false
+            }
         }
     }
 }

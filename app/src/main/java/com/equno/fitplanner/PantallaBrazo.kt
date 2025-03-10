@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class PantallaBrazo : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,6 +37,27 @@ class PantallaBrazo : AppCompatActivity() {
         imgbtn3.setOnClickListener {
             val intent = Intent(this, PantallaHombro::class.java)
             startActivity(intent)
+        }
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.navigation_home -> {
+                    if (this.javaClass != MainMenu::class.java) {
+                        val intent = Intent(this, MainMenu::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+                R.id.navigation_explore -> {
+                    if (this.javaClass != ExplorarEjercicios::class.java) {
+                        val intent = Intent(this, ExplorarEjercicios::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+                // Agrega los otros casos de navegación aquí si es necesario
+                else -> false
+            }
         }
 
     }
