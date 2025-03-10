@@ -216,6 +216,7 @@
         tools:text="4.Mantén el control en todo momento, evitando que la cadera se hunda o se eleve excesivamente." />
 
     <ImageButton
+        android:id="@+id/flexiones"
         android:layout_width="255dp"
         android:layout_height="172dp"
         android:background="@color/white"

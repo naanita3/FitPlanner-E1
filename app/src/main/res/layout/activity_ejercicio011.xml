@@ -216,6 +216,7 @@
         tools:text="4.Contrae los pectorales al juntar las manos, luego regresa controladamente a la posición inicial." />
 
     <ImageButton
+        android:id="@+id/crossoverpecho"
         android:layout_width="255dp"
         android:layout_height="172dp"
         android:background="@color/white"

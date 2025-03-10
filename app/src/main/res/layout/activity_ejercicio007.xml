@@ -216,6 +216,7 @@
         tools:text="4.Empuja la barra hacia arriba hasta extender completamente los brazos,sin sobrextender los codos." />
 
     <ImageButton
+        android:id="@+id/pressbancapecho"
         android:layout_width="255dp"
         android:layout_height="172dp"
         android:background="@color/white"

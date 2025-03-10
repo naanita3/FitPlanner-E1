@@ -211,6 +211,7 @@ manteniendo los codos en su lugar.
         app:layout_constraintVertical_bias="0.606" />
 
     <ImageButton
+        android:id="@+id/bicepspredmartillo"
         android:layout_width="255dp"
         android:layout_height="172dp"
         android:background="@color/white"

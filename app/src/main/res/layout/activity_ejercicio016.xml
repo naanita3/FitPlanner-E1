@@ -200,6 +200,7 @@
         />
 
     <ImageButton
+        android:id="@+id/pesomuertorumano"
         android:layout_width="255dp"
         android:layout_height="172dp"
         android:background="@color/white"

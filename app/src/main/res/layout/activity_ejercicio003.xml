@@ -194,6 +194,7 @@
         tools:text="4.Regresa lentamente a la posición inicial sin girar el tronco." />
 
     <ImageButton
+        android:id="@+id/remomancuerna"
         android:layout_width="255dp"
         android:layout_height="172dp"
         android:background="@color/white"

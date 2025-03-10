@@ -214,6 +214,7 @@ extendiendo completamente los brazos y los tríceps."
         app:layout_constraintVertical_bias="0.606" />
 
     <ImageButton
+        android:id="@+id/tricepsjms"
         android:layout_width="255dp"
         android:layout_height="172dp"
         android:background="@color/white"

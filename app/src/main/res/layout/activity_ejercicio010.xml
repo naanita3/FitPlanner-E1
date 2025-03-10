@@ -215,6 +215,7 @@
         tools:text="4.Empuja hacia arriba hasta que los brazos queden completamente extendidos, manteniendo el core activado." />
 
     <ImageButton
+        android:id="@+id/fondospecho"
         android:layout_width="255dp"
         android:layout_height="172dp"
         android:background="@color/white"

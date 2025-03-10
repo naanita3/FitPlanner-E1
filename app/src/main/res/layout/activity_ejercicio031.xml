@@ -218,6 +218,7 @@ grados, manteniendo la espalda recta."
         app:layout_constraintVertical_bias="0.606" />
 
     <ImageButton
+        android:id="@+id/hombropressmilitar"
         android:layout_width="255dp"
         android:layout_height="172dp"
         android:background="@color/white"

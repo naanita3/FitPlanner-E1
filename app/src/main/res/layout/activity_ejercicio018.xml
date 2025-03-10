@@ -198,6 +198,7 @@
 
     <ImageButton
         android:layout_width="255dp"
+        android:id="@+id/frontalsquat"
         android:layout_height="172dp"
         android:background="@color/white"
         android:scaleType="centerCrop"
