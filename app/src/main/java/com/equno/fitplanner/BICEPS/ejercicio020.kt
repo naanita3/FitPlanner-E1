@@ -45,8 +45,9 @@ class ejercicio020 : AppCompatActivity() {
             }
         }
         val imageView: ImageView =findViewById(R.id.bicepsmartillo)
-        imageView.setOnClickListener{
-            val intent= Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/shorts/DpsKqvnekmM"))
+        imageView.setOnClickListener {
+            val intent =
+                Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/shorts/T0txYgZGKWU"))
             startActivity(intent)
         }
     }

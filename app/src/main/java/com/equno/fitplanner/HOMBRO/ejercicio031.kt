@@ -45,8 +45,9 @@ class ejercicio031 : AppCompatActivity() {
             }
         }
         val imageView: ImageView =findViewById(R.id.hombropressmilitar)
-        imageView.setOnClickListener{
-            val intent= Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/shorts/SPlZA3Rvts8"))
+        imageView.setOnClickListener {
+            val intent =
+                Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/shorts/PWtkHROaH3Y"))
             startActivity(intent)
         }
     }

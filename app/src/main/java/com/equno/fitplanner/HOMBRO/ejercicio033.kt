@@ -45,8 +45,9 @@ class ejercicio033 : AppCompatActivity() {
             }
         }
         val imageView: ImageView =findViewById(R.id.hombroelevacionfront)
-        imageView.setOnClickListener{
-            val intent= Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/shorts/nbNMK8ahVsk"))
+        imageView.setOnClickListener {
+            val intent =
+                Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/shorts/jk7YrK79ciA"))
             startActivity(intent)
         }
     }

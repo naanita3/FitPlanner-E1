@@ -44,9 +44,11 @@ class ejercicio021 : AppCompatActivity() {
                 else -> false
             }
         }
+
         val imageView: ImageView =findViewById(R.id.bicepsbayesian)
-        imageView.setOnClickListener{
-            val intent= Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/shorts/-WyGJz5sKwE"))
+        imageView.setOnClickListener {
+            val intent =
+                Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/shorts/J_-lkeKmHB8"))
             startActivity(intent)
         }
     }

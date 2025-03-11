@@ -45,8 +45,9 @@ class ejercicio025 : AppCompatActivity() {
             }
         }
         val imageView: ImageView =findViewById(R.id.tricepsjms)
-        imageView.setOnClickListener{
-            val intent= Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/shorts/Q89qOqfvhrY"))
+        imageView.setOnClickListener {
+            val intent =
+                Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/shorts/T6hKsaGd0bU"))
             startActivity(intent)
         }
     }

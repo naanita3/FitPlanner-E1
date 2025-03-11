@@ -33,7 +33,6 @@ class ejercicio028 : AppCompatActivity() {
                     }
                     true
                 }
-
                 R.id.navigation_explore -> {
                     if (this.javaClass != ExplorarEjercicios::class.java) {
                         val intent = Intent(this, ExplorarEjercicios::class.java)
@@ -45,10 +44,12 @@ class ejercicio028 : AppCompatActivity() {
                 else -> false
             }
         }
-            val imageView: ImageView =findViewById(R.id.tricepsskul)
-            imageView.setOnClickListener{
-                val intent= Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/shorts/vtN7xbLdMqU"))
-                startActivity(intent)
-            }
+
+        val imageView: ImageView =findViewById(R.id.tricepsskul)
+        imageView.setOnClickListener {
+            val intent =
+                Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/shorts/zR9gty7LUxE"))
+            startActivity(intent)
+        }
     }
 }
