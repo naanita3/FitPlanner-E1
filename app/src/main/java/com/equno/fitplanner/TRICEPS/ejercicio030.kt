@@ -1,7 +1,9 @@
 package com.equno.fitplanner.TRICEPS
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -41,6 +43,11 @@ class ejercicio030 : AppCompatActivity() {
                 // Agrega los otros casos de navegación aquí si es necesario
                 else -> false
             }
+        }
+        val imageView: ImageView =findViewById(R.id.tricepspoleabaa)
+        imageView.setOnClickListener{
+            val intent= Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/shorts/3ZTTSka2Niw"))
+            startActivity(intent)
         }
     }
 }
