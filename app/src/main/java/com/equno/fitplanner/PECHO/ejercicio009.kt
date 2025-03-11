@@ -1,7 +1,9 @@
 package com.equno.fitplanner.PECHO
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -41,6 +43,13 @@ class ejercicio009 : AppCompatActivity() {
                 // Agrega los otros casos de navegación aquí si es necesario
                 else -> false
             }
+        }
+
+        val imageView: ImageView =findViewById(R.id.aperturaspecho)
+        imageView.setOnClickListener {
+            val intent =
+                Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/shorts/GTZ0aQ7GMZo"))
+            startActivity(intent)
         }
     }
 }
