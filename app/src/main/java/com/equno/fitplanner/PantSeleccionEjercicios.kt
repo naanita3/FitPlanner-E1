@@ -19,23 +19,21 @@ class PantSeleccionEjercicios : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Configurar View Binding
+
         binding = ActivitySelEjerciciosBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Configurar RecyclerView
+
         recyclerView = binding.recyclerViewEjercicios // Acceder a la vista usando binding
         recyclerView.layoutManager = LinearLayoutManager(this)
 
-        // Obtener ejercicios desde Firestore
+
         obtenerEjercicios()
 
-        // Configurar el botón de confirmar
         binding.btnConfirmar.setOnClickListener {
             val ejerciciosSeleccionados = adapter.getEjerciciosSeleccionados()
             if (ejerciciosSeleccionados.isNotEmpty()) {
-                if (ejerciciosSeleccionados.size <= 7) { // Validar que no se exceda el límite
-                    // Pasar los ejercicios seleccionados a otra pantalla
+                if (ejerciciosSeleccionados.size <= 7) {
                     val intent = Intent(this, PantallaConfirmacion::class.java)
                     intent.putParcelableArrayListExtra("ejerciciosSeleccionados", ArrayList(ejerciciosSeleccionados))
                     startActivity(intent)
@@ -43,7 +41,6 @@ class PantSeleccionEjercicios : AppCompatActivity() {
                     Toast.makeText(this, "Solo puedes seleccionar hasta 7 ejercicios", Toast.LENGTH_SHORT).show()
                 }
             } else {
-                // Mostrar un mensaje si no se seleccionó ningún ejercicio
                 Toast.makeText(this, "Selecciona al menos un ejercicio", Toast.LENGTH_SHORT).show()
             }
         }
@@ -53,14 +50,19 @@ class PantSeleccionEjercicios : AppCompatActivity() {
         db.collection("ejercicios")
             .get()
             .addOnSuccessListener { result ->
-                val ejercicios = result.toObjects(Ejercicio::class.java)
+                val ejercicios = result.map { document ->
+                    val data = document.data
+                    Ejercicio(
+                        id = document.id,
+                        nombre = data["ejercicio"] as String,
+                        tipo = data["tipo"] as String
+                    )
+                }
                 adapter = EjercicioAdapter(ejercicios) { ejercicio, isChecked ->
-                    // Manejar la selección del ejercicio (opcional)
                 }
                 recyclerView.adapter = adapter
             }
             .addOnFailureListener { exception ->
-                // Manejar el error
                 Toast.makeText(this, "Error al cargar los ejercicios", Toast.LENGTH_SHORT).show()
             }
     }

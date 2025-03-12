@@ -14,24 +14,21 @@ class EjercicioAdapter(
 ) : RecyclerView.Adapter<EjercicioAdapter.EjercicioViewHolder>() {
 
     private val ejerciciosSeleccionados = mutableListOf<Ejercicio>()
-    private var maxSeleccionados = 7 // Límite de ejercicios seleccionados
+    private var maxSeleccionados = 7 // límite
 
     inner class EjercicioViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val tvNombre: TextView = itemView.findViewById(R.id.tvNombreEjercicio)
-        private val tvTipo: TextView = itemView.findViewById(R.id.tvTipoEjercicio)
         private val cbSeleccionar: CheckBox = itemView.findViewById(R.id.cbSeleccionar)
 
         fun bind(ejercicio: Ejercicio) {
             tvNombre.text = ejercicio.nombre
-            tvTipo.text = ejercicio.tipo
 
-            // Manejar la selección del ejercicio
             cbSeleccionar.setOnCheckedChangeListener { _, isChecked ->
                 if (isChecked) {
                     if (ejerciciosSeleccionados.size < maxSeleccionados) {
                         ejerciciosSeleccionados.add(ejercicio)
                     } else {
-                        cbSeleccionar.isChecked = false // Desmarcar si se supera el límite
+                        cbSeleccionar.isChecked = false
                         Toast.makeText(itemView.context, "Solo puedes seleccionar hasta 7 ejercicios", Toast.LENGTH_SHORT).show()
                     }
                 } else {
@@ -42,7 +39,6 @@ class EjercicioAdapter(
         }
     }
 
-    // Método para obtener la lista de ejercicios seleccionados
     fun getEjerciciosSeleccionados(): List<Ejercicio> {
         return ejerciciosSeleccionados
     }
@@ -58,4 +54,3 @@ class EjercicioAdapter(
 
     override fun getItemCount(): Int = ejercicios.size
 }
-

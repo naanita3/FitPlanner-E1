@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main">
+    android:background="@color/white">
 
     <View
         android:id="@+id/view"
@@ -51,14 +51,14 @@
         android:id="@+id/imageView"
         android:layout_width="57dp"
         android:layout_height="46dp"
-        app:tint="@color/fitplanner_icono2_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.001"
-        app:srcCompat="@drawable/pesa_icono" />
+        app:srcCompat="@drawable/pesa_icono"
+        app:tint="@color/fitplanner_icono2_background" />
 
     <SearchView
         android:id="@+id/searchView"
@@ -115,7 +115,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="200dp"
         android:layout_marginBottom="58dp"
-        android:background="#0015FF"
+        android:background="#47658b"
         android:scrollbars="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
