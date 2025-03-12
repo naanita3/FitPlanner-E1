@@ -187,9 +187,9 @@
             </RelativeLayout>
 
             <Button
-                android:background="@color/black"
+                android:background="@drawable/color_button"
                 android:id="@+id/botonSeleccion"
-                android:layout_width="match_parent"
+                android:layout_width="370dp"
                 android:layout_height="wrap_content"
                 android:text="SELECCIONAR EJERCICIOS"
                 />
