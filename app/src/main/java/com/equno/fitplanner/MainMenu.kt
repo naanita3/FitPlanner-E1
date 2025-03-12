@@ -20,13 +20,11 @@ class MainMenu : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Busca el botón por su ID
-        val btnMiRutina = findViewById<Button>(R.id.PantallaSelecEjer)
+        //*************************BOTON PARA VER LISTA DE EJERCICIOS*************************************
+        val btnSeleccion = findViewById<Button>(R.id.botonSeleccion)
 
-        // Configura el clic del botón
-        btnMiRutina.setOnClickListener {
-            // Crea un Intent para navegar a ActivitySetEjercicios
-            val intent = Intent(this, ActivitySetEjercicios::class.java)
+        btnSeleccion.setOnClickListener {
+            val intent = Intent(this, PantSeleccionEjercicios::class.java)
             startActivity(intent)
         }
 
@@ -37,6 +35,11 @@ class MainMenu : AppCompatActivity() {
             val intent = Intent(this, PantallaSelNivel::class.java)
             startActivity(intent)
         }
+
+
+
+
+
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {

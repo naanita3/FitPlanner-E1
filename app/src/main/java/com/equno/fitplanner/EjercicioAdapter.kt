@@ -3,32 +3,59 @@ package com.equno.fitplanner
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.CheckBox
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
-class EjercicioAdapter(private val ejercicios: List<Ejercicio>) : RecyclerView.Adapter<EjercicioAdapter.EjercicioViewHolder>() {
+class EjercicioAdapter(
+    private val ejercicios: List<Ejercicio>,
+    private val onEjercicioSeleccionado: (Ejercicio, Boolean) -> Unit
+) : RecyclerView.Adapter<EjercicioAdapter.EjercicioViewHolder>() {
 
-    // ViewHolder: Representa cada ítem de la lista
-    class EjercicioViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val tvNombreEjercicio: TextView = itemView.findViewById(R.id.tvNombreEjercicio)
-        val tvTipoEjercicio: TextView = itemView.findViewById(R.id.tvTipoEjercicio)
+    private val ejerciciosSeleccionados = mutableListOf<Ejercicio>()
+    private var maxSeleccionados = 7 // Límite de ejercicios seleccionados
+
+    inner class EjercicioViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        private val tvNombre: TextView = itemView.findViewById(R.id.tvNombreEjercicio)
+        private val tvTipo: TextView = itemView.findViewById(R.id.tvTipoEjercicio)
+        private val cbSeleccionar: CheckBox = itemView.findViewById(R.id.cbSeleccionar)
+
+        fun bind(ejercicio: Ejercicio) {
+            tvNombre.text = ejercicio.nombre
+            tvTipo.text = ejercicio.tipo
+
+            // Manejar la selección del ejercicio
+            cbSeleccionar.setOnCheckedChangeListener { _, isChecked ->
+                if (isChecked) {
+                    if (ejerciciosSeleccionados.size < maxSeleccionados) {
+                        ejerciciosSeleccionados.add(ejercicio)
+                    } else {
+                        cbSeleccionar.isChecked = false // Desmarcar si se supera el límite
+                        Toast.makeText(itemView.context, "Solo puedes seleccionar hasta 7 ejercicios", Toast.LENGTH_SHORT).show()
+                    }
+                } else {
+                    ejerciciosSeleccionados.remove(ejercicio)
+                }
+                onEjercicioSeleccionado(ejercicio, isChecked)
+            }
+        }
     }
 
-    // Crear nuevas vistas (ítems)
+    // Método para obtener la lista de ejercicios seleccionados
+    fun getEjerciciosSeleccionados(): List<Ejercicio> {
+        return ejerciciosSeleccionados
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EjercicioViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_dis_ejercicios, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_ejercicio, parent, false)
         return EjercicioViewHolder(view)
     }
 
-    // Asignar datos a las vistas
     override fun onBindViewHolder(holder: EjercicioViewHolder, position: Int) {
-        val ejercicio = ejercicios[position]
-        holder.tvNombreEjercicio.text = ejercicio.nombre
-        holder.tvTipoEjercicio.text = ejercicio.tipo
+        holder.bind(ejercicios[position])
     }
 
-    // Número total de ítems en la lista
-    override fun getItemCount(): Int {
-        return ejercicios.size
-    }
+    override fun getItemCount(): Int = ejercicios.size
 }
+

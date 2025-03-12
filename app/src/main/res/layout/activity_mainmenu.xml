@@ -188,11 +188,11 @@
 
             <Button
                 android:background="@color/black"
-                android:id="@+id/PantallaSelecEjer"
+                android:id="@+id/botonSeleccion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SELECCIONAR EJERCICIOS" />
-            <!-- android:onClick="miFuncion"/> -->
+                android:text="SELECCIONAR EJERCICIOS"
+                />
 
         </LinearLayout>
     </ScrollView>

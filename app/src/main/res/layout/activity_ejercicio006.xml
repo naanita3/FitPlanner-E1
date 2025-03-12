@@ -182,7 +182,7 @@
         tools:text="3.Jala la barra hacia el torso sin arquear la espalda." />
 
     <TextView
-        android:id="@+id/paso3"
+        android:id="@+id/paso4"
         android:layout_width="366dp"
         android:layout_height="wrap_content"
         android:text="4. Regresa lentamente a la posición inicial."
