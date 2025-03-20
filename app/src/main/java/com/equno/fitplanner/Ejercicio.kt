@@ -16,6 +16,7 @@ data class Ejercicio(
         parcel.readString() ?: ""
     )
 
+    // Constructor para Parcelable
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(id)
         parcel.writeString(nombre)

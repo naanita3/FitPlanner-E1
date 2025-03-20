@@ -12,42 +12,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
-        <activity
-            android:name=".PantEjerciciosSeleccionados"
-            android:exported="false" />
-        <activity
-            android:name=".CarroComprasActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HOMBRO.ejercicio036"
-            android:exported="false" />
-        <activity
-            android:name=".HOMBRO.ejercicio035"
-            android:exported="false" />
-        <activity
-            android:name=".HOMBRO.ejercicio034"
-            android:exported="false" />
-        <activity
-            android:name=".HOMBRO.ejercicio033"
-            android:exported="false" />
-        <activity
-            android:name=".HOMBRO.ejercicio032"
-            android:exported="false" />
-        <activity
-            android:name=".HOMBRO.ejercicio031"
-            android:exported="false" />
-        <activity
-            android:name=".TRICEPS.ejercicio030"
-            android:exported="false" />
-        <activity
-            android:name=".TRICEPS.ejercicio029"
-            android:exported="false" />
-        <activity
-            android:name=".TRICEPS.ejercicio028"
-            android:exported="false" />
-        <activity
-            android:name=".TRICEPS.ejercicio0"
-            android:exported="false" />
+        <!-- <activity
+             android:name=".PantEjerciciosSeleccionados"
+             android:exported="false" />-->
+       <!--  <activity
+             android:name=".CarroComprasActivity"
+             android:exported="false" />-->
+         <activity
+             android:name=".HOMBRO.ejercicio036"
+             android:exported="false" />
+         <activity
+             android:name=".HOMBRO.ejercicio035"
+             android:exported="false" />
+         <activity
+             android:name=".HOMBRO.ejercicio034"
+             android:exported="false" />
+         <activity
+             android:name=".HOMBRO.ejercicio033"
+             android:exported="false" />
+         <activity
+             android:name=".HOMBRO.ejercicio032"
+             android:exported="false" />
+         <activity
+             android:name=".HOMBRO.ejercicio031"
+             android:exported="false" />
+         <activity
+             android:name=".TRICEPS.ejercicio030"
+             android:exported="false" />
+         <activity
+             android:name=".TRICEPS.ejercicio029"
+             android:exported="false" />
+         <activity
+             android:name=".TRICEPS.ejercicio028"
+             android:exported="false" />
+         <!--<activity
+             android:name=".TRICEPS.ejercicio0"
+             android:exported="false" />-->
         <activity
             android:name=".TRICEPS.ejercicio027"
             android:exported="false" />
@@ -165,9 +165,9 @@
         <activity
             android:name=".MainMenu"
             android:exported="false" /> <!-- ******************************************************************************* -->
-        <activity
+        <!--<activity
             android:name=".ActivitySetEjercicios"
-            android:exported="false" />
+            android:exported="false" />-->
         <activity
             android:name=".PantallaSelNivel"
             android:exported="false" />
