@@ -12,42 +12,51 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
-        <!-- <activity
+        <activity
+            android:name=".PantallaFrutas"
+            android:exported="false" />
+        <!--
+         <activity
              android:name=".PantEjerciciosSeleccionados"
-             android:exported="false" />-->
-       <!--  <activity
+             android:exported="false" />
+        -->
+        <!--
+  <activity
              android:name=".CarroComprasActivity"
-             android:exported="false" />-->
-         <activity
-             android:name=".HOMBRO.ejercicio036"
              android:exported="false" />
-         <activity
-             android:name=".HOMBRO.ejercicio035"
-             android:exported="false" />
-         <activity
-             android:name=".HOMBRO.ejercicio034"
-             android:exported="false" />
-         <activity
-             android:name=".HOMBRO.ejercicio033"
-             android:exported="false" />
-         <activity
-             android:name=".HOMBRO.ejercicio032"
-             android:exported="false" />
-         <activity
-             android:name=".HOMBRO.ejercicio031"
-             android:exported="false" />
-         <activity
-             android:name=".TRICEPS.ejercicio030"
-             android:exported="false" />
-         <activity
-             android:name=".TRICEPS.ejercicio029"
-             android:exported="false" />
-         <activity
-             android:name=".TRICEPS.ejercicio028"
-             android:exported="false" />
-         <!--<activity
+        -->
+        <activity
+            android:name=".HOMBRO.ejercicio036"
+            android:exported="false" />
+        <activity
+            android:name=".HOMBRO.ejercicio035"
+            android:exported="false" />
+        <activity
+            android:name=".HOMBRO.ejercicio034"
+            android:exported="false" />
+        <activity
+            android:name=".HOMBRO.ejercicio033"
+            android:exported="false" />
+        <activity
+            android:name=".HOMBRO.ejercicio032"
+            android:exported="false" />
+        <activity
+            android:name=".HOMBRO.ejercicio031"
+            android:exported="false" />
+        <activity
+            android:name=".TRICEPS.ejercicio030"
+            android:exported="false" />
+        <activity
+            android:name=".TRICEPS.ejercicio029"
+            android:exported="false" />
+        <activity
+            android:name=".TRICEPS.ejercicio028"
+            android:exported="false" />
+        <!--
+<activity
              android:name=".TRICEPS.ejercicio0"
-             android:exported="false" />-->
+             android:exported="false" />
+        -->
         <activity
             android:name=".TRICEPS.ejercicio027"
             android:exported="false" />
@@ -165,9 +174,11 @@
         <activity
             android:name=".MainMenu"
             android:exported="false" /> <!-- ******************************************************************************* -->
-        <!--<activity
+        <!--
+<activity
             android:name=".ActivitySetEjercicios"
-            android:exported="false" />-->
+            android:exported="false" />
+        -->
         <activity
             android:name=".PantallaSelNivel"
             android:exported="false" />
@@ -218,16 +229,13 @@
             android:exported="false" /> <!-- ************* PANTALLA EN DONDE SE SELECCIONAN LOS EJERCICIOS ******* -->
         <activity
             android:name=".PantSeleccionEjercicios"
-            android:exported="false" />
-        <!-- ************* PANTALLAS DE CONFIRMACION  ******* -->
+            android:exported="false" /> <!-- ************* PANTALLAS DE CONFIRMACION  ******* -->
         <activity
             android:name=".PantallaConfirmacion"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE ALIMENTOS ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE ALIMENTOS ******* -->
         <activity
             android:name=".ExplorarAlimentos"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE VERDURAS ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE VERDURAS ******* -->
         <activity
             android:name=".PantallaVerduras"
             android:exported="false" />
