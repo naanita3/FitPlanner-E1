@@ -223,6 +223,14 @@
         <activity
             android:name=".PantallaConfirmacion"
             android:exported="false" />
+        <!-- ************* PANTALLA DE ALIMENTOS ******* -->
+        <activity
+            android:name=".ExplorarAlimentos"
+            android:exported="false" />
+        <!-- ************* PANTALLA DE VERDURAS ******* -->
+        <activity
+            android:name=".PantallaVerduras"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

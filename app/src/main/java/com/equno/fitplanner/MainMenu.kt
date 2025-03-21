@@ -36,6 +36,16 @@ class MainMenu : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //*************************BOTON ALIMENTOS POPULARES*************************************
+        val imgbtnAlimentos : ImageButton = findViewById(R.id.alimentosP)
+
+        imgbtnAlimentos.setOnClickListener {
+            val intent = Intent(this, ExplorarAlimentos::class.java)
+            startActivity(intent)
+        }
+
+
+
 
 
 
