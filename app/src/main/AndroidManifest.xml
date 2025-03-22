@@ -21,6 +21,12 @@
         <activity
             android:name=".PantallaFrutas"
             android:exported="false" />
+        <activity
+            android:name=".PantallaLacteos"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaCarnes"
+            android:exported="false" />
         <!--
          <activity
              android:name=".PantEjerciciosSeleccionados"
