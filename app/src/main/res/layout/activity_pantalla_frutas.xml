@@ -83,7 +83,6 @@
         android:layout_height="wrap_content"
         android:text="FRUTAS"
         android:textColor="@color/black"
-        android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
