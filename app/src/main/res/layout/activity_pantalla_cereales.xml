@@ -162,9 +162,8 @@
                 android:id="@+id/amaranto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="40dp"
+                android:layout_marginBottom="5dp"
                 android:src="@drawable/cereal_amarantoo"/>
-
 
             <ImageView
                 android:id="@+id/centeno"
@@ -205,9 +204,8 @@
                 android:id="@+id/sorgo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="40dp"
+                android:layout_marginBottom="5dp"
                 android:src="@drawable/cereal_sorgoo"/>
-
 
             <ImageView
                 android:id="@+id/teff"
@@ -255,10 +253,8 @@
                 android:id="@+id/granola"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="250dp"
                 android:src="@drawable/cereal_granolaa" />
-
-
 
 
         </LinearLayout>

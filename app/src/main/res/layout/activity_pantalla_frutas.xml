@@ -164,9 +164,8 @@
                 android:id="@+id/imgfruta7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="40dp"
+                android:layout_marginBottom="5dp"
                 android:src="@drawable/fruta_fresa"/>
-
 
             <ImageView
                 android:id="@+id/imgfruta8"
@@ -207,7 +206,7 @@
                 android:id="@+id/imgfruta13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="40dp"
+                android:layout_marginBottom="5dp"
                 android:src="@drawable/fruta_moras"/>
 
 
@@ -257,7 +256,7 @@
                 android:id="@+id/imgfruta20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="250dp"
                 android:src="@drawable/fruta_uvas" />
 
 

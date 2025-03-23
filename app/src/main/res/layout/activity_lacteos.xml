@@ -77,6 +77,7 @@
         app:layout_constraintVertical_bias="0.075" />
 
     <TextView
+        android:background="#CEBB7E"
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -166,7 +167,6 @@
                 android:layout_marginBottom="5dp"
                 android:src="@drawable/lechedearroz"/>
 
-
             <ImageView
                 android:id="@+id/lanacardo"
                 android:layout_width="wrap_content"
@@ -206,9 +206,8 @@
                 android:id="@+id/qcottage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="40dp"
+                android:layout_marginBottom="5dp"
                 android:src="@drawable/quesocottage"/>
-
 
             <ImageView
                 android:id="@+id/qrequeson"
@@ -256,11 +255,8 @@
                 android:id="@+id/yogurcoco"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="250dp"
                 android:src="@drawable/yogurcoco" />
-
-
-
 
         </LinearLayout>
 

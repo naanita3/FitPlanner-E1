@@ -12,21 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
-        <activity
-            android:name=".PantallaGrasascnProte"
-            android:exported="false" />
-        <activity
-            android:name=".PantallaCereales"
-            android:exported="false" />
-        <activity
-            android:name=".PantallaFrutas"
-            android:exported="false" />
-        <activity
-            android:name=".PantallaLacteos"
-            android:exported="false" />
-        <activity
-            android:name=".PantallaCarnes"
-            android:exported="false" />
         <!--
          <activity
              android:name=".PantEjerciciosSeleccionados"
@@ -238,18 +223,44 @@
             android:exported="false" />
         <activity
             android:name=".PantallaDia4a"
-            android:exported="false" /> <!-- ************* PANTALLA EN DONDE SE SELECCIONAN LOS EJERCICIOS ******* -->
+            android:exported="false" />
+        <!-- ************* PANTALLA EN DONDE SE SELECCIONAN LOS EJERCICIOS ******* -->
         <activity
             android:name=".PantSeleccionEjercicios"
-            android:exported="false" /> <!-- ************* PANTALLAS DE CONFIRMACION  ******* -->
+            android:exported="false" />
+        <!-- ************* PANTALLAS DE CONFIRMACION  ******* -->
         <activity
             android:name=".PantallaConfirmacion"
-            android:exported="false" /> <!-- ************* PANTALLA DE ALIMENTOS ******* -->
+            android:exported="false" />
+        <!-- ************* PANTALLA DE ALIMENTOS ******* -->
         <activity
             android:name=".ExplorarAlimentos"
-            android:exported="false" /> <!-- ************* PANTALLA DE VERDURAS ******* -->
+            android:exported="false" />
+        <!-- ************* PANTALLA DE VERDURAS ******* -->
         <activity
             android:name=".PantallaVerduras"
+            android:exported="false" />
+        <!-- ************* PANTALLA DE FRUTAS ******* -->
+        <activity
+            android:name=".PantallaFrutas"
+            android:exported="false" />
+        <!-- ************* PANTALLA DE CARNES ******* -->
+        <activity
+            android:name=".PantallaCarnes"
+            android:exported="false" />
+        <!-- ************* PANTALLA DE CEREALES ******* -->
+        <activity
+            android:name=".PantallaCereales"
+            android:exported="false" />
+        <!-- ************* PANTALLA DE LEGUMINOSAS ******* -->
+        <!-- ************* PANTALLA DE GRASAS CON PROTE ******* -->
+        <activity
+            android:name=".PantallaGrasascnProte"
+            android:exported="false" />
+        <!-- ************* PANTALLA DE GRASAS SIN PROTE ******* -->
+        <!-- ************* PANTALLA DE LECHE Y DERIVADOS ******* -->
+        <activity
+            android:name=".PantallaLacteos"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

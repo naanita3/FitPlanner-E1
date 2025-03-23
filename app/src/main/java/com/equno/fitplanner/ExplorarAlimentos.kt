@@ -40,6 +40,62 @@ class ExplorarAlimentos : AppCompatActivity() {
             val intent = Intent(this, PantallaVerduras::class.java)
             startActivity(intent)
         }
+
+        //BOTON PARA IR A FRUTAS
+        val imgbtnFrutas: ImageButton = findViewById(R.id.frutasbtn)
+
+        imgbtnFrutas.setOnClickListener {
+            val intent = Intent(this, PantallaFrutas::class.java)
+            startActivity(intent)
+        }
+
+        //BOTON PARA IR A CARNES
+        val imgbtnCarnes: ImageButton = findViewById(R.id.carnesbtn)
+
+        imgbtnCarnes.setOnClickListener {
+            val intent = Intent(this, PantallaCarnes::class.java)
+            startActivity(intent)
+        }
+
+        //BOTON PARA IR A CEREALES
+        val imgbtnCereales: ImageButton = findViewById(R.id.cerealesbtn)
+
+        imgbtnCereales.setOnClickListener {
+            val intent = Intent(this, PantallaCereales::class.java)
+            startActivity(intent)
+        }
+
+        //BOTON PARA IR A LEGUMINOSAS
+        val imgbtnLeguminosas: ImageButton = findViewById(R.id.leguminosasbtn)
+
+        imgbtnLeguminosas.setOnClickListener {
+            val intent = Intent(this, PantallaVerduras::class.java)
+            startActivity(intent)
+        }
+
+        //BOTON PARA IR A GRASAS CON PROTE
+        val imgbtnGrasascnprote: ImageButton = findViewById(R.id.grasasprotebtn)
+
+        imgbtnGrasascnprote.setOnClickListener {
+            val intent = Intent(this, PantallaGrasascnProte::class.java)
+            startActivity(intent)
+        }
+
+        //BOTON PARA IR A GRASAS SIN PROTE
+        val imgbtnGrasassinprote: ImageButton = findViewById(R.id.grasassinprotebtn)
+
+        imgbtnGrasassinprote.setOnClickListener {
+            val intent = Intent(this, PantallaVerduras::class.java)
+            startActivity(intent)
+        }
+
+        //BOTON PARA IR A LECHE Y DERIVADOS
+        val imgbtnLeche: ImageButton = findViewById(R.id.lechebtn)
+
+        imgbtnLeche.setOnClickListener {
+            val intent = Intent(this, PantallaLacteos::class.java)
+            startActivity(intent)
+        }
     }
 
 }
