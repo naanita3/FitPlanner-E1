@@ -117,146 +117,146 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imgfruta1"
+                android:id="@+id/avena"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_Avena" />
+                android:src="@drawable/cereal_avenaa" />
 
             <ImageView
-                android:id="@+id/imgfruta2"
+                android:id="@+id/quinoa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_Quinoa" />
+                android:src="@drawable/cereal_quinoaaa" />
 
             <ImageView
-                android:id="@+id/imgfruta3"
+                android:id="@+id/arrozint"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_ArrozInt" />
+                android:src="@drawable/cereal_arrozinte" />
 
             <ImageView
-                android:id="@+id/imgfruta4"
+                android:id="@+id/trigosarra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_TrigoSarra" />
+                android:src="@drawable/cereal_trigosarraa" />
 
             <ImageView
-                android:id="@+id/imgfruta5"
+                android:id="@+id/cebada"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_Cebada" />
+                android:src="@drawable/cereal_cebadaa" />
 
             <ImageView
-                android:id="@+id/imgfruta6"
+                android:id="@+id/mijo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_Mijo" />
+                android:src="@drawable/cereal_mijoo" />
 
             <ImageView
-                android:id="@+id/imgfruta7"
+                android:id="@+id/amaranto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="40dp"
-                android:src="@drawable/Cereal_Amaranto"/>
+                android:src="@drawable/cereal_amarantoo"/>
 
 
             <ImageView
-                android:id="@+id/imgfruta8"
+                android:id="@+id/centeno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_Centeno" />
+                android:src="@drawable/cereal_centenoo" />
 
             <ImageView
-                android:id="@+id/imgfruta9"
+                android:id="@+id/bulgur"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_Bulgur" />
+                android:src="@drawable/cereal_bulgurr" />
 
             <ImageView
-                android:id="@+id/imgfruta10"
+                android:id="@+id/espelta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_Espelta" />
+                android:src="@drawable/cereal_espeltaa" />
 
             <ImageView
-                android:id="@+id/imgfruta11"
+                android:id="@+id/maiz"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_Maiz" />
+                android:src="@drawable/cereal_maizz" />
 
             <ImageView
-                android:id="@+id/imgfruta12"
+                android:id="@+id/arrozsalvaje"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_ArrozSalva" />
+                android:src="@drawable/cereal_arrozsalvaje" />
 
             <ImageView
-                android:id="@+id/imgfruta13"
+                android:id="@+id/sorgo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="40dp"
-                android:src="@drawable/Cereal_Sorgo"/>
+                android:src="@drawable/cereal_sorgoo"/>
 
 
             <ImageView
-                android:id="@+id/imgfruta14"
+                android:id="@+id/teff"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_Teff" />
+                android:src="@drawable/cereal_tefff" />
 
             <ImageView
-                android:id="@+id/imgfruta15"
+                android:id="@+id/farro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_Farro" />
+                android:src="@drawable/cereal_farroo" />
 
             <ImageView
-                android:id="@+id/imgfruta16"
+                android:id="@+id/kamut"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_Kamut" />
+                android:src="@drawable/cereal_kamutt" />
 
             <ImageView
-                android:id="@+id/imgfruta17"
+                android:id="@+id/couscousint"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_Coscous" />
+                android:src="@drawable/cereal_couscousint" />
 
             <ImageView
-                android:id="@+id/imgfruta18"
+                android:id="@+id/pan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_Pan" />
+                android:src="@drawable/cereal_pann" />
 
             <ImageView
-                android:id="@+id/imgfruta19"
+                android:id="@+id/pasta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_Pasta" />
+                android:src="@drawable/cereal_pastaa" />
 
             <ImageView
-                android:id="@+id/imgfruta20"
+                android:id="@+id/granola"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/Cereal_Granola" />
+                android:src="@drawable/cereal_granolaa" />
 
 
 

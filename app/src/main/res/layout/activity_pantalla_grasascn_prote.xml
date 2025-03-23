@@ -117,75 +117,75 @@
         android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/imgfruta1"
+        android:id="@+id/aguacate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
-        android:src="@drawable/GrasasProte_Aguacate" />
+        android:src="@drawable/grasasprote_aguacatee" />
 
     <ImageView
-        android:id="@+id/imgfruta2"
+        android:id="@+id/nueces"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
-        android:src="@drawable/GrasasProte_Nueces" />
+        android:src="@drawable/grasasprote_nuecess" />
 
     <ImageView
-        android:id="@+id/imgfruta3"
+        android:id="@+id/almendras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
-        android:src="@drawable/GrasasProte_Almendras" />
+        android:src="@drawable/grasasprote_almendrass" />
 
     <ImageView
-        android:id="@+id/imgfruta4"
+        android:id="@+id/pistachos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
-        android:src="@drawable/GrasasProte_Pistachos" />
+        android:src="@drawable/grasasprote_pistachoss" />
 
     <ImageView
-        android:id="@+id/imgfruta5"
+        android:id="@+id/semillaschia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
-        android:src="@drawable/GrasasProte_SemillasChia" />
+        android:src="@drawable/grasasprote_semillaschiaa" />
 
     <ImageView
-        android:id="@+id/imgfruta6"
+        android:id="@+id/semillascalabaza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
-        android:src="@drawable/GrasasProte_SemillasCalab" />
+        android:src="@drawable/grasasprote_semillascalabaza" />
 
     <ImageView
-        android:id="@+id/imgfruta7"
+        android:id="@+id/semillasgirasol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
-        android:src="@drawable/GrasasProte_Girasol"/>
+        android:src="@drawable/grasasprote_semillasgirasol"/>
 
 
     <ImageView
-        android:id="@+id/imgfruta8"
+        android:id="@+id/mantemani"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
-        android:src="@drawable/GrasasProte_ManMani" />
+        android:src="@drawable/grasasprote_manmanii" />
 
     <ImageView
-        android:id="@+id/imgfruta9"
+        android:id="@+id/mantequillalmendras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
-        android:src="@drawable/GrasasProte_ManAlm" />
+        android:src="@drawable/grasasprote_manalme" />
 
     <ImageView
-        android:id="@+id/imgfruta10"
+        android:id="@+id/tahini"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
-        android:src="@drawable/GrasasProte_Tahini" />
+        android:src="@drawable/grasasprote_tahinii" />
 
     </LinearLayout>
 
