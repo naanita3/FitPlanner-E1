@@ -69,7 +69,7 @@ class ExplorarAlimentos : AppCompatActivity() {
         val imgbtnLeguminosas: ImageButton = findViewById(R.id.leguminosasbtn)
 
         imgbtnLeguminosas.setOnClickListener {
-            val intent = Intent(this, PantallaVerduras::class.java)
+            val intent = Intent(this, PantallaLeguminosas::class.java)
             startActivity(intent)
         }
 
@@ -85,7 +85,7 @@ class ExplorarAlimentos : AppCompatActivity() {
         val imgbtnGrasassinprote: ImageButton = findViewById(R.id.grasassinprotebtn)
 
         imgbtnGrasassinprote.setOnClickListener {
-            val intent = Intent(this, PantallaVerduras::class.java)
+            val intent = Intent(this, PantallaGrassinprote::class.java)
             startActivity(intent)
         }
 

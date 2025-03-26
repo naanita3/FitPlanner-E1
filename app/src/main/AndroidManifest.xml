@@ -253,11 +253,17 @@
             android:name=".PantallaCereales"
             android:exported="false" />
         <!-- ************* PANTALLA DE LEGUMINOSAS ******* -->
+        <activity
+            android:name=".PantallaLeguminosas"
+            android:exported="false" />
         <!-- ************* PANTALLA DE GRASAS CON PROTE ******* -->
         <activity
             android:name=".PantallaGrasascnProte"
             android:exported="false" />
         <!-- ************* PANTALLA DE GRASAS SIN PROTE ******* -->
+        <activity
+            android:name=".PantallaGrassinprote"
+            android:exported="false" />
         <!-- ************* PANTALLA DE LECHE Y DERIVADOS ******* -->
         <activity
             android:name=".PantallaLacteos"
