@@ -13,6 +13,7 @@ import com.equno.fitplanner.ESPALDA.ejercicio003
 import com.equno.fitplanner.ESPALDA.ejercicio004
 import com.equno.fitplanner.ESPALDA.ejercicio005
 import com.equno.fitplanner.ESPALDA.ejercicio006
+import com.equno.fitplanner.ExplorarAlimentos
 import com.equno.fitplanner.ExplorarEjercicios
 import com.equno.fitplanner.MainMenu
 import com.equno.fitplanner.R
@@ -46,7 +47,13 @@ class ejercicio019 : AppCompatActivity() {
                     }
                     true
                 }
-                // Agrega los otros casos de navegación aquí si es necesario
+                R.id.navigation_plan -> {
+                    if (this.javaClass != ExplorarAlimentos::class.java) {
+                        val intent = Intent(this, ExplorarAlimentos::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }// Agrega los otros casos de navegación aquí si es necesario
                 else -> false
             }
         }

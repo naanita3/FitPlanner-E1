@@ -52,7 +52,13 @@ class PantallaTriceps : AppCompatActivity() {
                     }
                     true
                 }
-                // Agrega los otros casos de navegación aquí si es necesario
+                R.id.navigation_plan -> {
+                    if (this.javaClass != ExplorarAlimentos::class.java) {
+                        val intent = Intent(this, ExplorarAlimentos::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
                 else -> false
             }
         }

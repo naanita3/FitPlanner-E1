@@ -8,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.equno.fitplanner.ExplorarAlimentos
 import com.equno.fitplanner.ExplorarEjercicios
 import com.equno.fitplanner.MainMenu
 import com.equno.fitplanner.R
@@ -40,7 +41,13 @@ class ejercicio022 : AppCompatActivity() {
                     }
                     true
                 }
-                // Agrega los otros casos de navegación aquí si es necesario
+                R.id.navigation_plan -> {
+                    if (this.javaClass != ExplorarAlimentos::class.java) {
+                        val intent = Intent(this, ExplorarAlimentos::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }// Agrega los otros casos de navegación aquí si es necesario
                 else -> false
             }
         }
