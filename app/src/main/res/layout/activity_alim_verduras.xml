@@ -75,12 +75,13 @@
         app:layout_constraintVertical_bias="0.075" />
 
     <TextView
-        android:background="#0bf507"
+
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="VERDURAS"
-        android:textColor="@color/black"
+        android:textColor="#0bf507"
+        android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -121,140 +122,141 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
-                android:src="@drawable/espinacas2" />
+                android:layout_marginTop="3dp"
+                android:src="@drawable/verdura_acelgas" />
 
             <ImageView
                 android:id="@+id/imgverd2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
-                android:src="@drawable/brocoli" />
+                android:src="@drawable/verdura_ajo" />
 
             <ImageView
                 android:id="@+id/imgverd3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
-                android:src="@drawable/zanahoria" />
+                android:src="@drawable/verdura_apio" />
 
             <ImageView
                 android:id="@+id/imgverd4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
-                android:src="@drawable/kale" />
+                android:src="@drawable/verdura_berenjena" />
 
             <ImageView
                 android:id="@+id/imgverd5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
-                android:src="@drawable/colrizada" />
+                android:src="@drawable/verdura_brocoli" />
 
             <ImageView
                 android:id="@+id/imgverd6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/pepino" />
+                android:src="@drawable/verdura_calabacin" />
 
             <ImageView
                 android:id="@+id/imgverd7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/tomate" />
+                android:src="@drawable/verdura_cebolla" />
 
             <ImageView
                 android:id="@+id/imgverd8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/pimientorojo"/>
+                android:src="@drawable/verdura_col"/>
 
             <ImageView
                 android:id="@+id/imgverd9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/pimientoverde"/>
+                android:src="@drawable/verdura_coliflor"/>
 
             <ImageView
                 android:id="@+id/imgverd10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/calabacin" />
+                android:src="@drawable/verdura_esparrago" />
 
             <ImageView
                 android:id="@+id/imgverd11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/berenjena" />
+                android:src="@drawable/verdura_espinaca" />
 
             <ImageView
                 android:id="@+id/imgverd12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/coliflor" />
+                android:src="@drawable/verdura_kale" />
 
             <ImageView
                 android:id="@+id/imgverd13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/esparragos" />
+                android:src="@drawable/verdura_lechugaromana" />
 
             <ImageView
                 android:id="@+id/imgverd14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/lechugaromana" />
+                android:src="@drawable/verdura_pepino" />
 
             <ImageView
                 android:id="@+id/imgverd15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/acelgas" />
+                android:src="@drawable/verdura_pimientorojo" />
 
             <ImageView
                 android:id="@+id/imgverd16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/rucula"/>
+                android:src="@drawable/verdura_pimientoverde"/>
 
             <ImageView
                 android:id="@+id/imgverd17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/remolacha"/>
+                android:src="@drawable/verdura_remolacha"/>
 
             <ImageView
                 android:id="@+id/imgverd18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/cebolla" />
+                android:src="@drawable/verdura_rucula" />
 
             <ImageView
                 android:id="@+id/imgverd19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:src="@drawable/ajo" />
+                android:src="@drawable/verdura_tomate" />
 
             <ImageView
                 android:id="@+id/imgverd20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="250dp"
-                android:src="@drawable/apio" />
+                android:src="@drawable/verdura_zanahoria" />
 
         </LinearLayout>
 
