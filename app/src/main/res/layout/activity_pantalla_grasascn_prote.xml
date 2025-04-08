@@ -119,72 +119,72 @@
         <ImageView
             android:id="@+id/aguacate"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:src="@drawable/grasasprote_aguacatee" />
+            android:layout_height="150dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/grasasprote_aguacate" />
 
         <ImageView
             android:id="@+id/nueces"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:src="@drawable/grasasprote_nuecess" />
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/grasasprote_nueces" />
 
         <ImageView
             android:id="@+id/almendras"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:src="@drawable/grasasprote_almendrass" />
+            android:layout_height="150dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/grasasprote_almendras" />
 
         <ImageView
             android:id="@+id/pistachos"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:src="@drawable/grasasprote_pistachoss" />
+            android:layout_height="150dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/grasasprote_pistachos" />
 
         <ImageView
             android:id="@+id/semillaschia"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:src="@drawable/grasasprote_semillaschiaa" />
+            android:layout_height="150dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/grasasprote_semillaschia" />
 
         <ImageView
             android:id="@+id/semillascalabaza"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:src="@drawable/grasasprote_semillascalabaza" />
+            android:layout_height="150dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/grasasprote_semillascalab" />
 
         <ImageView
             android:id="@+id/semillasgirasol"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="1dp"
             android:src="@drawable/grasasprote_semillasgirasol"/>
 
         <ImageView
             android:id="@+id/mantemani"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:src="@drawable/grasasprote_manmanii" />
+            android:layout_height="150dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/grasasprote_mani" />
 
         <ImageView
             android:id="@+id/mantequillalmendras"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:src="@drawable/grasasprote_manalme" />
+            android:layout_height="150dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/grasasprote_manalm" />
 
         <ImageView
             android:id="@+id/tahini"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="150dp"
             android:layout_marginBottom="250dp"
-            android:src="@drawable/grasasprote_tahinii" />
+            android:src="@drawable/grasasprote_tahini" />
 
     </LinearLayout>
 

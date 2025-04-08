@@ -119,142 +119,142 @@
             <ImageView
                 android:id="@+id/avena"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_avenaa" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_avena" />
 
             <ImageView
                 android:id="@+id/quinoa"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_quinoaaa" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_quinoa" />
 
             <ImageView
                 android:id="@+id/arrozint"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_arrozinte" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_arrozint" />
 
             <ImageView
                 android:id="@+id/trigosarra"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_trigosarraa" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_trigosarra" />
 
             <ImageView
                 android:id="@+id/cebada"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_cebadaa" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_cebada" />
 
             <ImageView
                 android:id="@+id/mijo"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_mijoo" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_mijo" />
 
             <ImageView
                 android:id="@+id/amaranto"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_amarantoo"/>
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_amaranto"/>
 
             <ImageView
                 android:id="@+id/centeno"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_centenoo" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_centeno" />
 
             <ImageView
                 android:id="@+id/bulgur"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_bulgurr" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_bulgur" />
 
             <ImageView
                 android:id="@+id/espelta"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_espeltaa" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_espelta" />
 
             <ImageView
                 android:id="@+id/maiz"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_maizz" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_maiz" />
 
             <ImageView
                 android:id="@+id/arrozsalvaje"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_arrozsalvaje" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_arrozsalv" />
 
             <ImageView
                 android:id="@+id/sorgo"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_sorgoo"/>
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_sorgo"/>
 
             <ImageView
                 android:id="@+id/teff"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_tefff" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_teff" />
 
             <ImageView
                 android:id="@+id/farro"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_farroo" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_farro" />
 
             <ImageView
                 android:id="@+id/kamut"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_kamutt" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_kamut" />
 
             <ImageView
                 android:id="@+id/couscousint"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_couscousint" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_couscous" />
 
             <ImageView
                 android:id="@+id/pan"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_pann" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_pan" />
 
             <ImageView
                 android:id="@+id/pasta"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cereal_pastaa" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_pasta" />
 
             <ImageView
                 android:id="@+id/granola"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="250dp"
-                android:src="@drawable/cereal_granolaa" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/cereal_granola" />
 
 
         </LinearLayout>
