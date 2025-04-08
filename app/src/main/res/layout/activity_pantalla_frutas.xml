@@ -77,19 +77,20 @@
         app:layout_constraintVertical_bias="0.075" />
 
     <TextView
-        android:background="#F5077E"
+
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="FRUTAS"
-        android:textColor="@color/black"
+        android:textColor="#FF00FB"
+        android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.014" />
+        app:layout_constraintVertical_bias="0.007" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -121,143 +122,158 @@
             <ImageView
                 android:id="@+id/imgfruta1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_aguacate" />
 
-            <ImageView
-                android:id="@+id/imgfruta2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/frutas_manzana" />
 
             <ImageView
                 android:id="@+id/imgfruta3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_arandanos" />
 
             <ImageView
                 android:id="@+id/imgfruta4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_ciruela" />
 
             <ImageView
                 android:id="@+id/imgfruta5"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_durazno" />
 
             <ImageView
                 android:id="@+id/imgfruta6"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_frambuesa" />
 
             <ImageView
                 android:id="@+id/imgfruta7"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_fresa"/>
 
             <ImageView
                 android:id="@+id/imgfruta8"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_granada" />
 
             <ImageView
                 android:id="@+id/imgfruta9"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_kiwi" />
 
             <ImageView
                 android:id="@+id/imgfruta10"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_limon" />
 
             <ImageView
                 android:id="@+id/imgfruta11"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_mango" />
+
+            <ImageView
+                android:id="@+id/imgfruta2"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/fruta_manzana" />
 
             <ImageView
                 android:id="@+id/imgfruta12"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_melon" />
 
             <ImageView
                 android:id="@+id/imgfruta13"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_moras"/>
 
 
             <ImageView
                 android:id="@+id/imgfruta14"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_naranja" />
 
             <ImageView
                 android:id="@+id/imgfruta15"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_papaya" />
 
             <ImageView
                 android:id="@+id/imgfruta16"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_pera" />
 
             <ImageView
                 android:id="@+id/imgfruta17"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_pina" />
 
             <ImageView
                 android:id="@+id/imgfruta18"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_platano" />
 
             <ImageView
                 android:id="@+id/imgfruta19"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_sandia" />
 
             <ImageView
                 android:id="@+id/imgfruta20"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="250dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/fruta_uvas" />
+
+            <ImageView
+                android:id="@+id/imgfruta21"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/color_button_logblanco" />
+            <ImageView
+                android:id="@+id/imgfruta22"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/color_button_logblanco" />
 
 
 

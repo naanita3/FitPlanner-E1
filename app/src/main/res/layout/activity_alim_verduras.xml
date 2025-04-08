@@ -120,35 +120,35 @@
                 android:id="@+id/imgverd1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/espinacas2" />
 
             <ImageView
                 android:id="@+id/imgverd2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/brocoli" />
 
             <ImageView
                 android:id="@+id/imgverd3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/zanahoria" />
 
             <ImageView
                 android:id="@+id/imgverd4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/kale" />
 
             <ImageView
                 android:id="@+id/imgverd5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/colrizada" />
 
             <ImageView

@@ -122,21 +122,21 @@
                 android:id="@+id/bisontecarne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/bisonte" />
 
             <ImageView
                 android:id="@+id/carnecabra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/carnedecabra" />
 
             <ImageView
                 android:id="@+id/carnejabali"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/carnedejabali" />
 
             <ImageView
