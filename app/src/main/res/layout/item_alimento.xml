@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="8dp"
-    android:background="@color/black">
+    android:padding="8dp">
 
+    <!-- Nombre del alimento -->
     <TextView
-        android:id="@+id/tvNombreEjercicio"
+        android:id="@+id/tvNombreAlimento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Nombre del alimento"
         android:textSize="18sp"
-        android:text="Nombre del ejercicio" />
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
 
-    <TextView
-        android:id="@+id/tvTipoEjercicio"
+    <!-- CheckBox para seleccionar el alimento -->
+    <CheckBox
+        android:id="@+id/cbSeleccionar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="14sp"
-        android:text="Tipo de ejercicio" />
+        android:text="Seleccionar"
+        android:textColor="@color/white"
+        />
 
 
 </LinearLayout>

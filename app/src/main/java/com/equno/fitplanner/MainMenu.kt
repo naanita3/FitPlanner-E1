@@ -28,6 +28,14 @@ class MainMenu : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //*************************BOTON PARA VER LISTA DE ALIMENTOS*************************************
+        val btnSeleccionAlim = findViewById<Button>(R.id.botonSeleccionAlim)
+
+        btnSeleccionAlim.setOnClickListener {
+            val intent = Intent(this, PantSeleccionAlimentos::class.java)
+            startActivity(intent)
+        }
+
         //*********BOTON DE PRINCIPIANTE**********************************************************
         val imgbtnrutPredef : ImageButton = findViewById(R.id.RutinasPredeterminadas)
 

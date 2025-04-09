@@ -228,9 +228,17 @@
         <activity
             android:name=".PantSeleccionEjercicios"
             android:exported="false" />
+        <!-- ************* PANTALLA EN DONDE SE SELECCIONAN LOS ALIMENTOS ******* -->
+        <activity
+            android:name=".PantSeleccionAlimentos"
+            android:exported="false" />
         <!-- ************* PANTALLAS DE CONFIRMACION  ******* -->
         <activity
             android:name=".PantallaConfirmacion"
+            android:exported="false" />
+        <!-- ************* PANTALLAS DE CONFIRMACION ALIMENTOS ******* -->
+        <activity
+            android:name=".PantallaConfirmacionAlimentos"
             android:exported="false" />
         <!-- ************* PANTALLA DE ALIMENTOS ******* -->
         <activity

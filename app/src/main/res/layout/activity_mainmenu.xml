@@ -192,6 +192,17 @@
                 android:layout_width="370dp"
                 android:layout_height="wrap_content"
                 android:text="SELECCIONAR EJERCICIOS"
+                android:layout_marginBottom="50px"
+                android:layout_marginTop="50px"
+                />
+
+            <Button
+                android:background="@drawable/color_button"
+                android:id="@+id/botonSeleccionAlim"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:text="SELECCIONAR ALIMENTOS"
+                android:layout_marginBottom="30px"
                 />
 
         </LinearLayout>
