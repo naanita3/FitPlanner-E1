@@ -77,11 +77,11 @@
         app:layout_constraintVertical_bias="0.075" />
 
     <TextView
-        android:background="#CEBB7E"
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LÁCTEOS Y DERIVADOS"
+        android:textSize="24sp"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
@@ -121,141 +121,141 @@
             <ImageView
                 android:id="@+id/lentera"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/lecheentera" />
 
             <ImageView
                 android:id="@+id/ldescre"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/lechedescremada" />
 
             <ImageView
                 android:id="@+id/lalmendra"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/lechedealmendra" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/lechealmendra" />
 
             <ImageView
                 android:id="@+id/lavena"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/lechedeavena" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/lecheavena" />
 
             <ImageView
                 android:id="@+id/lsoja"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/lechedesoja" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/lechesoja" />
 
             <ImageView
                 android:id="@+id/lcoco"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/lechedecoco" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/lechecoco" />
 
             <ImageView
                 android:id="@+id/larroz"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/lechedearroz"/>
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/lechearroz"/>
 
             <ImageView
                 android:id="@+id/lanacardo"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/lechedeanacardo" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/lecheanacardo" />
 
             <ImageView
                 android:id="@+id/levapo"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/evaporada" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/lecheevaporada" />
 
             <ImageView
                 android:id="@+id/lcondensada"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/condensada" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/lechecondensada" />
 
             <ImageView
                 android:id="@+id/kefir"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/kefir" />
 
             <ImageView
                 android:id="@+id/qfresco"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/quesofresco" />
 
             <ImageView
                 android:id="@+id/qcottage"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/quesocottage"/>
 
             <ImageView
                 android:id="@+id/qrequeson"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/requeson" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/quesorequeson" />
 
             <ImageView
                 android:id="@+id/qmozzarella"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/mozzarella" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/quesomozarella" />
 
             <ImageView
                 android:id="@+id/qcheddar"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/cheddar" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/quesocheddar" />
 
             <ImageView
                 android:id="@+id/qparmesano"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/parmesano" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/quesoparmesano" />
 
             <ImageView
                 android:id="@+id/yogurnat"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/yogurnat" />
 
             <ImageView
                 android:id="@+id/yogurgriego"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/yogurgriego" />
 
             <ImageView
                 android:id="@+id/yogurcoco"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="250dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/yogurcoco" />
 
         </LinearLayout>

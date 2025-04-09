@@ -77,11 +77,11 @@
         app:layout_constraintVertical_bias="0.075" />
 
     <TextView
-        android:background="#ED0808"
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CARNES"
+        android:textSize="24sp"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
@@ -121,142 +121,142 @@
             <ImageView
                 android:id="@+id/bisontecarne"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="150dp"
                 android:layout_marginBottom="1dp"
                 android:src="@drawable/bisonte" />
 
             <ImageView
                 android:id="@+id/carnecabra"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="150dp"
                 android:layout_marginBottom="1dp"
-                android:src="@drawable/carnedecabra" />
+                android:src="@drawable/carnecabra" />
 
             <ImageView
                 android:id="@+id/carnejabali"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="150dp"
                 android:layout_marginBottom="1dp"
-                android:src="@drawable/carnedejabali" />
+                android:src="@drawable/carnejabali" />
 
             <ImageView
                 android:id="@+id/carnemolida"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/carnemolida" />
 
             <ImageView
                 android:id="@+id/cordero"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/cordero" />
 
             <ImageView
                 android:id="@+id/solomillo"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/solomillo" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/solomilloternera" />
 
             <ImageView
                 android:id="@+id/venado"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/venado"/>
 
             <ImageView
                 android:id="@+id/chuleta"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/chuleta" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/chuletacerdo" />
 
             <ImageView
                 android:id="@+id/lomocerdo"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/lomodecerdo" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/lomocerdo" />
 
             <ImageView
                 android:id="@+id/costillas"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/costillasdecerdo" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/costillacerdo" />
 
             <ImageView
                 android:id="@+id/pechugapollo"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/pechugadepollo" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/pechugapollo" />
 
             <ImageView
                 android:id="@+id/muslopollo"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/muslodepollo" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/muslopollo" />
 
             <ImageView
                 android:id="@+id/pavo"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/pavo"/>
 
             <ImageView
                 android:id="@+id/codorniz"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/codorniz" />
 
             <ImageView
                 android:id="@+id/avestruz"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/carnedeaveztruz" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/carneavestruz" />
 
             <ImageView
                 android:id="@+id/pato"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/pato" />
 
             <ImageView
                 android:id="@+id/higado"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:src="@drawable/higado" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/higadores" />
 
             <ImageView
                 android:id="@+id/conejo"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/conejo" />
 
             <ImageView
                 android:id="@+id/molida"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
                 android:src="@drawable/carnemolida" />
 
             <ImageView
                 android:id="@+id/molidapavo"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="250dp"
-                android:src="@drawable/carnemolidapavo" />
+                android:layout_height="150dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/pavomolido" />
 
         </LinearLayout>
 
