@@ -144,14 +144,6 @@
             <!--android:src="@drawable/lechealmendra" -->
 
             <ImageView
-                android:id="@+id/lavena"
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_marginBottom="1dp"
-                />
-            <!--android:src="@drawable/lecheavena" -->
-
-            <ImageView
                 android:id="@+id/lsoja"
                 android:layout_width="wrap_content"
                 android:layout_height="150dp"
