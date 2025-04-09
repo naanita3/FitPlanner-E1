@@ -149,7 +149,7 @@
                     android:layout_height="match_parent"
                     android:background="@null"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/frutasimg" />
+                    android:src="@drawable/frutasimage" />
 
                 <TextView
                     android:layout_width="wrap_content"
