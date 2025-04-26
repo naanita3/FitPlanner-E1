@@ -142,8 +142,8 @@
                     android:id="@+id/consejos"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
                     android:background="@null"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/consejosp" />
 
                 <TextView
@@ -211,6 +211,15 @@
                 android:layout_width="370dp"
                 android:layout_height="wrap_content"
                 android:text="CALCULADORA DE IMC"
+                android:layout_marginBottom="30px"
+                />
+
+            <Button
+                android:background="@drawable/color_button"
+                android:id="@+id/botonLogOut"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:text="LOG OUT"
                 android:layout_marginBottom="30px"
                 />
 
