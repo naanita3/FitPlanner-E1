@@ -202,6 +202,15 @@
                 android:layout_width="370dp"
                 android:layout_height="wrap_content"
                 android:text="SELECCIONAR ALIMENTOS"
+                android:layout_marginBottom="50px"
+                />
+
+            <Button
+                android:background="@drawable/color_button"
+                android:id="@+id/botonCalculoIMC"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:text="CALCULADORA DE IMC"
                 android:layout_marginBottom="30px"
                 />
 

@@ -276,6 +276,10 @@
         <activity
             android:name=".PantallaLacteos"
             android:exported="false" />
+        <!-- ************* PANTALLA DE IMC ******* -->
+        <activity
+            android:name=".PantallaIMC"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

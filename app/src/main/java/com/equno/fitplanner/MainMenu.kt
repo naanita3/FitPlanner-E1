@@ -52,8 +52,13 @@ class MainMenu : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //*************************BOTON CALCULO DE IMC*************************************
+        val btnCalculoIMC = findViewById<Button>(R.id.botonCalculoIMC)
 
-
+        btnCalculoIMC.setOnClickListener {
+            val intent = Intent(this, PantallaIMC::class.java)
+            startActivity(intent)
+        }
 
 
 
