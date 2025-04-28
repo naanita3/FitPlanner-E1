@@ -280,6 +280,30 @@
         <activity
             android:name=".PantallaIMC"
             android:exported="false" />
+        <!-- ************* PANTALLA DE RECOMENDACIONES DEL IMC ******* -->
+        <activity
+            android:name=".PantallaRecomIMC"
+            android:exported="false" />
+        <!-- ************* PANTALLA DE BAJO PESO DEL IMC ******* -->
+        <activity
+            android:name=".PantallaBajoPeso"
+            android:exported="false" />
+        <!-- ************* PANTALLA DE PPESO NORMAL DEL IMC ******* -->
+        <activity
+            android:name=".PantallaPesoNormal"
+            android:exported="false" />
+        <!-- ************* PANTALLA DE SOBREPESO DEL IMC ******* -->
+        <activity
+            android:name=".PantallaSobrepeso"
+            android:exported="false" />
+        <!-- ************* PANTALLA DE OBESIDAD 1 DEL IMC ******* -->
+        <activity
+            android:name=".PantallaObesidadUno"
+            android:exported="false" />
+        <!-- ************* PANTALLA DE OBESIDAD 2 DEL IMC ******* -->
+        <activity
+            android:name=".PantallaObesidadDos"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -1,5 +1,6 @@
 package com.equno.fitplanner
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -41,6 +42,13 @@ class PantallaIMC : AppCompatActivity() {
             return
         }
 
+        //ver recomendaciones
+        findViewById<Button>(R.id.btnRecomendaciones).setOnClickListener {
+            startActivity(Intent(this, PantallaRecomIMC::class.java).apply {
+                putExtra("user_id", userId)
+            })
+        }
+
         initViews()
         setupButtons()
     }
@@ -63,6 +71,8 @@ class PantallaIMC : AppCompatActivity() {
         /*btnRecomendaciones.setOnClickListener {
             mostrarRecomendaciones()
         }*/
+
+
     }
 
     private fun calcularIMC() {

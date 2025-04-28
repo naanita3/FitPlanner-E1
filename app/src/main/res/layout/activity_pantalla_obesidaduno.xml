@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PantallaRecomIMC">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#181819"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FitPlanner"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="57dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:tint="@color/fitplanner_icono2_background"
+        app:srcCompat="@drawable/pesa_icono" />
+
+    <TextView
+        android:id="@+id/searchView"
+        android:layout_width="322dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/color_button_logblanco"
+        android:gravity="center"
+        android:text="Plan Alimenticio para Obesidad Grado 1 (IMC 30-34.9)"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="5dp"
+        android:justificationMode="inter_word"
+        android:text="Objetivo Principal:
+Lograr una pérdida de peso gradual (1-1.5 kg/semana) mediante un déficit calórico moderado (500-750 kcal/día), priorizando saciedad, nutrición adecuada y cambios de hábitos permanentes. Enfocado en mejorar parámetros metabólicos y prevenir recuperación de peso."
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="400dp"
+        android:layout_height="580dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Plan diario (6 comidas)"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Desayuno (7:00 AM)"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="• 3 claras de huevo + 1 huevo entero revueltos con espinacas\n• 1/4 de aguacate pequeño\n• 1 taza de té verde o café sin azúcar"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Justificación: Esta comida combina claras de huevo (proteína magra para preservar masa muscular) con espinacas (fibra y micronutrientes esenciales) y una pequeña porción de aguacate (grasas saludables para absorción de vitaminas). El té verde aporta antioxidantes y efecto termogénico, iniciando el día con un balance óptimo de nutrientes sin exceso calórico."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Media Mañana (10:00 AM)"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• 1 taza de pepinos y apio en bastones\n• 1 lata pequeña de atún al natural (escurrido)\n• 1 cucharadita de linaza molida"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"
+                android:text="Justificación: Los vegetales crudos (pepino/apio) proporcionan volumen y saciedad con mínimas calorías, mientras el atún al natural ofrece proteína completa y omega-3 antiinflamatorio. La linaza molida añade fibra soluble para mejorar la digestión y controlar la glucosa en sangre." />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Almuerzo (1:00 PM)"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="• 120g de pechuga de pollo a la plancha\n• 2 tazas de ensalada verde (lechuga, pepino, rábanos)\n• 1/2 taza de brócoli al vapor\n• 1 cucharadita de aceite de oliva virgen extra"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Justificación: La pechuga de pollo (proteína magra) se complementa con vegetales de bajo índice glucémico (ensalada verde, brócoli) para crear una comida voluminosa y rica en fibra. El aceite de oliva virgen extra (en cantidad controlada) mejora la absorción de nutrientes liposolubles y aporta grasas cardiosaludables."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Merienda (4:00 PM)"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="• 1 taza de requesón bajo en grasa\n• 1/2 taza de arándanos frescos\n• Canela al gusto"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Justificación: El requesón bajo en grasa proporciona caseína (proteína de lenta absorción) ideal para mantener la saciedad entre comidas. Los arándanos añaden antioxidantes y fibra, mientras la canela ayuda a regular los niveles de glucosa, evitando picos de insulina."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cena (7:00 PM)"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="• 150g de merluza al horno\n• 2 tazas de espárragos salteados con ajo\n• 1 cucharadita de aceite de coco\n• Ensalada de berros con limón"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Justificación: La merluza (proteína fácil de digerir con omega-3) y los espárragos (fibra y folatos) forman una cena ligera pero nutritiva. El aceite de coco en mínima cantidad aporta triglicéridos de cadena media (fuente energética que no se almacena como grasa). La ensalada de berros con limón cierra la comida con vitamina C y compuestos depurativos."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nota: "
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Este plan debe ser supervisado por un equipo multidisciplinario (nutricionista, endocrinólogo, psicólogo) y ajustado individualmente según respuesta metabólica y necesidades específicas."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recomendaciones clave:"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:justificationMode="inter_word"
+                android:text="• Hidratación: 2-3 litros de agua/día (incluir 1 vaso antes de cada comida)\n• Suplementos considerables: Vitamina D, omega-3 y probióticos (según necesidad)\n• Control médico: Monitoreo mensual de presión arterial, glucosa y perfil lipídico\n• Caminata diaria de 45-60 minutos."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resultados esperados a 3 meses:"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Pérdida de 12-18 kg de peso corporal\n• Reducción de 5-10 cm de circunferencia abdominal\n• Mejora en marcadores metabólicos (HbA1c, colesterol LDL, triglicéridos) \n• Aumento de energía y movilidad"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
