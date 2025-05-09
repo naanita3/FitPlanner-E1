@@ -187,7 +187,7 @@
             </RelativeLayout>
 
             <Button
-                android:background="@drawable/color_button"
+                android:background="@drawable/color_cuadradonegro"
                 android:id="@+id/botonSeleccion"
                 android:layout_width="370dp"
                 android:layout_height="wrap_content"
@@ -197,7 +197,7 @@
                 />
 
             <Button
-                android:background="@drawable/color_button"
+                android:background="@drawable/color_cuadradonegro"
                 android:id="@+id/botonSeleccionAlim"
                 android:layout_width="370dp"
                 android:layout_height="wrap_content"
@@ -206,7 +206,7 @@
                 />
 
             <Button
-                android:background="@drawable/color_button"
+                android:background="@drawable/color_cuadradonegro"
                 android:id="@+id/botonCalculoIMC"
                 android:layout_width="370dp"
                 android:layout_height="wrap_content"
@@ -215,7 +215,7 @@
                 />
 
             <Button
-                android:background="@drawable/color_button"
+                android:background="@drawable/color_cuadradonegro"
                 android:id="@+id/botonLogOut"
                 android:layout_width="370dp"
                 android:layout_height="wrap_content"

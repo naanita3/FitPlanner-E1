@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="8dp"
+    android:background="@drawable/color_linea_recycler">
 
     <!-- Nombre del alimento -->
     <TextView
@@ -11,9 +12,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre del alimento"
-        android:textSize="18sp"
+        android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="@color/white"/>
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"/>
 
     <!-- CheckBox para seleccionar el alimento -->
     <CheckBox
@@ -21,7 +24,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Seleccionar"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:buttonTint="#0015FF"
         />
 
 
