@@ -82,7 +82,7 @@
         tools:layout_editor_absoluteY="89dp" />
 
     <TextView
-        android:id="@+id/textView33"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Usuario X"
@@ -97,7 +97,6 @@
         app:layout_constraintVertical_bias="0.115" />
 
     <TextView
-        android:id="@+id/textView50"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Usuario@mail.com"
@@ -107,7 +106,6 @@
         tools:layout_editor_absoluteY="135dp" />
 
     <View
-        android:id="@+id/view"
         android:layout_width="160dp"
         android:layout_height="40dp"
         android:background="#181819"
@@ -119,7 +117,6 @@
         app:layout_constraintVertical_bias="0.247" />
 
     <TextView
-        android:id="@+id/textView50"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calcular IMC"
@@ -129,7 +126,7 @@
         tools:layout_editor_absoluteY="179dp" />
 
     <TextView
-        android:id="@+id/textView33"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Información personal"
