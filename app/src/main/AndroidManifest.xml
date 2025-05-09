@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         tools:targetApi="31">
+        <activity
+            android:name=".PantallaMiCuenta"
+            android:exported="false" />
+        <activity
+            android:name=".pantalla_cuenta"
+            android:exported="false" />
         <!--
          <activity
              android:name=".PantEjerciciosSeleccionados"
@@ -223,84 +229,64 @@
             android:exported="false" />
         <activity
             android:name=".PantallaDia4a"
-            android:exported="false" />
-        <!-- ************* PANTALLA EN DONDE SE SELECCIONAN LOS EJERCICIOS ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA EN DONDE SE SELECCIONAN LOS EJERCICIOS ******* -->
         <activity
             android:name=".PantSeleccionEjercicios"
-            android:exported="false" />
-        <!-- ************* PANTALLA EN DONDE SE SELECCIONAN LOS ALIMENTOS ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA EN DONDE SE SELECCIONAN LOS ALIMENTOS ******* -->
         <activity
             android:name=".PantSeleccionAlimentos"
-            android:exported="false" />
-        <!-- ************* PANTALLAS DE CONFIRMACION  ******* -->
+            android:exported="false" /> <!-- ************* PANTALLAS DE CONFIRMACION  ******* -->
         <activity
             android:name=".PantallaConfirmacion"
-            android:exported="false" />
-        <!-- ************* PANTALLAS DE CONFIRMACION ALIMENTOS ******* -->
+            android:exported="false" /> <!-- ************* PANTALLAS DE CONFIRMACION ALIMENTOS ******* -->
         <activity
             android:name=".PantallaConfirmacionAlimentos"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE ALIMENTOS ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE ALIMENTOS ******* -->
         <activity
             android:name=".ExplorarAlimentos"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE VERDURAS ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE VERDURAS ******* -->
         <activity
             android:name=".PantallaVerduras"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE FRUTAS ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE FRUTAS ******* -->
         <activity
             android:name=".PantallaFrutas"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE CARNES ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE CARNES ******* -->
         <activity
             android:name=".PantallaCarnes"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE CEREALES ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE CEREALES ******* -->
         <activity
             android:name=".PantallaCereales"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE LEGUMINOSAS ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE LEGUMINOSAS ******* -->
         <activity
             android:name=".PantallaLeguminosas"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE GRASAS CON PROTE ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE GRASAS CON PROTE ******* -->
         <activity
             android:name=".PantallaGrasascnProte"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE GRASAS SIN PROTE ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE GRASAS SIN PROTE ******* -->
         <activity
             android:name=".PantallaGrassinprote"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE LECHE Y DERIVADOS ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE LECHE Y DERIVADOS ******* -->
         <activity
             android:name=".PantallaLacteos"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE IMC ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE IMC ******* -->
         <activity
             android:name=".PantallaIMC"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE RECOMENDACIONES DEL IMC ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE RECOMENDACIONES DEL IMC ******* -->
         <activity
             android:name=".PantallaRecomIMC"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE BAJO PESO DEL IMC ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE BAJO PESO DEL IMC ******* -->
         <activity
             android:name=".PantallaBajoPeso"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE PPESO NORMAL DEL IMC ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE PPESO NORMAL DEL IMC ******* -->
         <activity
             android:name=".PantallaPesoNormal"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE SOBREPESO DEL IMC ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE SOBREPESO DEL IMC ******* -->
         <activity
             android:name=".PantallaSobrepeso"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE OBESIDAD 1 DEL IMC ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE OBESIDAD 1 DEL IMC ******* -->
         <activity
             android:name=".PantallaObesidadUno"
-            android:exported="false" />
-        <!-- ************* PANTALLA DE OBESIDAD 2 DEL IMC ******* -->
+            android:exported="false" /> <!-- ************* PANTALLA DE OBESIDAD 2 DEL IMC ******* -->
         <activity
             android:name=".PantallaObesidadDos"
             android:exported="false" />
