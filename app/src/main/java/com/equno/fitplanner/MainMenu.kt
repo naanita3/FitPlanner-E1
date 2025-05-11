@@ -107,6 +107,13 @@ class MainMenu : AppCompatActivity() {
                     })
                     true
                 }
+                R.id.navigation_account -> {
+                    startActivity(Intent(this, PantallaMiCuenta::class.java).apply {
+                        putExtra("user_id", userId)
+                        flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
+                    })
+                    true
+                }
                 else -> false
             }
         }
