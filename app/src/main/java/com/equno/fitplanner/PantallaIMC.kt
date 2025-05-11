@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.Timestamp
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.ktx.firestore
@@ -51,6 +52,50 @@ class PantallaIMC : AppCompatActivity() {
 
         initViews()
         setupButtons()
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.navigation_home -> {
+                    if (this.javaClass != MainMenu::class.java) {
+                        val intent = Intent(this, MainMenu::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+                R.id.navigation_explore -> {
+                    if (this.javaClass != ExplorarEjercicios::class.java) {
+                        val intent = Intent(this, ExplorarEjercicios::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+                R.id.navigation_plan -> {
+                    if (this.javaClass != ExplorarAlimentos::class.java) {
+                        val intent = Intent(this, ExplorarAlimentos::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+
+                R.id.navigation_routine -> {
+                    if (this.javaClass != PantallaSelNivel::class.java) {
+                        val intent = Intent(this, PantallaSelNivel::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+
+                R.id.navigation_account -> {
+                    if (this.javaClass != PantallaMiCuenta::class.java) {
+                        val intent = Intent(this, PantallaMiCuenta::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+                // Agrega los otros casos de navegación aquí si es necesario
+                else -> false
+            }
+        }
     }
 
     private fun initViews() {

@@ -92,7 +92,24 @@ class PantallaPierna : AppCompatActivity() {
                         startActivity(intent)
                     }
                     true
-                } // Agrega los otros casos de navegación aquí si es necesario
+                }
+
+                R.id.navigation_routine -> {
+                    if (this.javaClass != PantallaSelNivel::class.java) {
+                        val intent = Intent(this, PantallaSelNivel::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+
+                R.id.navigation_account -> {
+                    if (this.javaClass != PantallaMiCuenta::class.java) {
+                        val intent = Intent(this, PantallaMiCuenta::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+                // Agrega los otros casos de navegación aquí si es necesario
                 else -> false
             }
         }

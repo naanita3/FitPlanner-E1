@@ -63,4 +63,5 @@ class AlimentoAdapter(
 
     // Método para obtener el número total de items en la lista
     override fun getItemCount(): Int = alimentos.size
+
 }

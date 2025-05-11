@@ -39,6 +39,12 @@ class MainMenu : AppCompatActivity() {
             })
         }
 
+        findViewById<ImageButton>(R.id.consejos).setOnClickListener {
+            startActivity(Intent(this, PantallaConsejos::class.java).apply {
+                putExtra("user_id", userId)
+            })
+        }
+
         //selección de ejercicios
         findViewById<Button>(R.id.botonSeleccion).setOnClickListener {
             startActivity(Intent(this, PantSeleccionEjercicios::class.java).apply {
@@ -109,6 +115,13 @@ class MainMenu : AppCompatActivity() {
                 }
                 R.id.navigation_account -> {
                     startActivity(Intent(this, PantallaMiCuenta::class.java).apply {
+                        putExtra("user_id", userId)
+                        flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
+                    })
+                    true
+                }
+                R.id.navigation_routine -> {
+                    startActivity(Intent(this, PantallaSelNivel::class.java).apply {
                         putExtra("user_id", userId)
                         flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
                     })

@@ -9,7 +9,6 @@ class PantallaDia3a : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dia3_a)
-
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
@@ -23,6 +22,29 @@ class PantallaDia3a : AppCompatActivity() {
                 R.id.navigation_explore -> {
                     if (this.javaClass != ExplorarEjercicios::class.java) {
                         val intent = Intent(this, ExplorarEjercicios::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+                R.id.navigation_plan -> {
+                    if (this.javaClass != ExplorarAlimentos::class.java) {
+                        val intent = Intent(this, ExplorarAlimentos::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+
+                R.id.navigation_routine -> {
+                    if (this.javaClass != PantallaSelNivel::class.java) {
+                        val intent = Intent(this, PantallaSelNivel::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+
+                R.id.navigation_account -> {
+                    if (this.javaClass != PantallaMiCuenta::class.java) {
+                        val intent = Intent(this, PantallaMiCuenta::class.java)
                         startActivity(intent)
                     }
                     true

@@ -66,4 +66,5 @@ class PantSeleccionAlimentos : AppCompatActivity() {
                 Toast.makeText(this, "Error al cargar los alimentos", Toast.LENGTH_SHORT).show()
             }
     }
+
 }

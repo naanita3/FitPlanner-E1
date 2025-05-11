@@ -10,8 +10,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.equno.fitplanner.ESPALDA.ejercicio001
+import com.equno.fitplanner.ExplorarAlimentos
 import com.equno.fitplanner.ExplorarEjercicios
 import com.equno.fitplanner.MainMenu
+import com.equno.fitplanner.PantallaMiCuenta
+import com.equno.fitplanner.PantallaSelNivel
 import com.equno.fitplanner.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -39,6 +42,29 @@ class ejercicio007 : AppCompatActivity() {
                 R.id.navigation_explore -> {
                     if (this.javaClass != ExplorarEjercicios::class.java) {
                         val intent = Intent(this, ExplorarEjercicios::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+                R.id.navigation_plan -> {
+                    if (this.javaClass != ExplorarAlimentos::class.java) {
+                        val intent = Intent(this, ExplorarAlimentos::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+
+                R.id.navigation_routine -> {
+                    if (this.javaClass != PantallaSelNivel::class.java) {
+                        val intent = Intent(this, PantallaSelNivel::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+
+                R.id.navigation_account -> {
+                    if (this.javaClass != PantallaMiCuenta::class.java) {
+                        val intent = Intent(this, PantallaMiCuenta::class.java)
                         startActivity(intent)
                     }
                     true

@@ -16,6 +16,8 @@ import com.equno.fitplanner.ESPALDA.ejercicio006
 import com.equno.fitplanner.ExplorarAlimentos
 import com.equno.fitplanner.ExplorarEjercicios
 import com.equno.fitplanner.MainMenu
+import com.equno.fitplanner.PantallaMiCuenta
+import com.equno.fitplanner.PantallaSelNivel
 import com.equno.fitplanner.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -53,7 +55,24 @@ class ejercicio019 : AppCompatActivity() {
                         startActivity(intent)
                     }
                     true
-                }// Agrega los otros casos de navegación aquí si es necesario
+                }
+
+                R.id.navigation_routine -> {
+                    if (this.javaClass != PantallaSelNivel::class.java) {
+                        val intent = Intent(this, PantallaSelNivel::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+
+                R.id.navigation_account -> {
+                    if (this.javaClass != PantallaMiCuenta::class.java) {
+                        val intent = Intent(this, PantallaMiCuenta::class.java)
+                        startActivity(intent)
+                    }
+                    true
+                }
+                // Agrega los otros casos de navegación aquí si es necesario
                 else -> false
             }
         }
