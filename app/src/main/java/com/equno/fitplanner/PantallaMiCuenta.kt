@@ -3,6 +3,7 @@ package com.equno.fitplanner
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -164,6 +165,20 @@ class PantallaMiCuenta : AppCompatActivity() {
 
         binding.btnCambiarAvatar.setOnClickListener {
             mostrarSelectorAvatares()
+        }
+
+        //seleccion de ejercicios BOTON
+        findViewById<ImageButton>(R.id.btnSeleccionarEjerciciosMC).setOnClickListener {
+            startActivity(Intent(this, PantSeleccionEjercicios::class.java).apply {
+                putExtra("user_id", userId)
+            })
+        }
+
+        //seleccion de alimentos BOTON
+        findViewById<ImageButton>(R.id.btnSeleccionarAlimentosMC).setOnClickListener {
+            startActivity(Intent(this, PantSeleccionAlimentos::class.java).apply {
+                putExtra("user_id", userId)
+            })
         }
     }
 
