@@ -195,7 +195,60 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
+
+
     <!-- Barra de navegación inferior -->
+
+    <ImageButton
+        android:id="@+id/btnSeleccionarAlimentosMC"
+        android:layout_width="185dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="54dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/seleccionaralimentosbtn" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selección alimentos"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSeleccionarAlimentosMC"
+        app:layout_constraintEnd_toEndOf="@+id/btnSeleccionarAlimentosMC"
+        app:layout_constraintStart_toStartOf="@+id/btnSeleccionarAlimentosMC"
+        app:layout_constraintTop_toTopOf="@+id/btnSeleccionarAlimentosMC" />
+
+    <ImageButton
+        android:id="@+id/btnSeleccionarEjerciciosMC"
+        android:layout_width="185dp"
+        android:layout_height="162dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="54dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/seleccionarejerciciosbtn" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selección ejercicios"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSeleccionarEjerciciosMC"
+        app:layout_constraintEnd_toEndOf="@+id/btnSeleccionarEjerciciosMC"
+        app:layout_constraintStart_toStartOf="@+id/btnSeleccionarEjerciciosMC"
+        app:layout_constraintTop_toTopOf="@+id/btnSeleccionarEjerciciosMC" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
@@ -205,5 +258,6 @@
         app:itemTextColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_nav_menu" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
