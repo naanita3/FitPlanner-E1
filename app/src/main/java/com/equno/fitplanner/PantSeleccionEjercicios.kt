@@ -100,10 +100,12 @@ class PantSeleccionEjercicios : AppCompatActivity() {
                     Ejercicio(
                         id = document.id,
                         nombre = data["ejercicio"] as String,
-                        tipo = data["tipo"] as String
+                        tipo = data["tipo"] as String,
+                        imagenUrl = data["imagenUrl"] as? String ?: ""
                     )
                 }
                 adapter = EjercicioAdapter(ejercicios) { ejercicio, isChecked ->
+                    // Manejar selección/deselección si es necesario
                 }
                 recyclerView.adapter = adapter
             }

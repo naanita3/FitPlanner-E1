@@ -6,7 +6,8 @@ import android.os.Parcelable
 data class Ejercicio(
     val id: String = "",
     val nombre: String = "",
-    val tipo: String = ""
+    val tipo: String = "",
+    val imagenUrl: String = "" // Nueva propiedad para la imagen
 ) : Parcelable {
 
     // Constructor para Parcelable
