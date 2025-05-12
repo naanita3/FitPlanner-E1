@@ -7,21 +7,21 @@ data class Ejercicio(
     val id: String = "",
     val nombre: String = "",
     val tipo: String = "",
-    val imagenUrl: String = "" // Nueva propiedad para la imagen
+    val imagenUrl: String = "" //propiedad para la imagen
 ) : Parcelable {
 
-    // Constructor para Parcelable
     constructor(parcel: Parcel) : this(
         parcel.readString() ?: "",
         parcel.readString() ?: "",
-        parcel.readString() ?: ""
+        parcel.readString() ?: "",
+        parcel.readString() ?: "" // añade imagenUrl
     )
 
-    // Constructor para Parcelable
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(id)
         parcel.writeString(nombre)
         parcel.writeString(tipo)
+        parcel.writeString(imagenUrl) // añade imagenUrl
     }
 
     override fun describeContents(): Int {

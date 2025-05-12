@@ -10,7 +10,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class PantallaConfirmacion : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
-    private lateinit var adapter: EjercicioAdapter
+    private lateinit var adapter: ConfirmacionEjercicioAdapter // Cambia el tipo del adapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,9 +25,7 @@ class PantallaConfirmacion : AppCompatActivity() {
 
         // Mostrar los ejercicios seleccionados
         if (ejerciciosSeleccionados != null) {
-            adapter = EjercicioAdapter(ejerciciosSeleccionados) { ejercicio, isChecked ->
-                // No necesitas manejar selecciones aquí
-            }
+            adapter = ConfirmacionEjercicioAdapter(ejerciciosSeleccionados) // Usa el nuevo adapter
             recyclerView.adapter = adapter
         }
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
