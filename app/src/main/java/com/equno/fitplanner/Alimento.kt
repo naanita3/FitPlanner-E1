@@ -6,26 +6,25 @@ import android.os.Parcelable
 data class Alimento(
     val id: String = "",
     val nombre: String = "",
-    val tipo: String = ""
+    val tipo: String = "",
+    val imagenUrl: String = "" // Asegúrate que esta propiedad existe
 ) : Parcelable {
 
-    // Constructor para Parcelable
     constructor(parcel: Parcel) : this(
         parcel.readString() ?: "",
         parcel.readString() ?: "",
-        parcel.readString() ?: ""
+        parcel.readString() ?: "",
+        parcel.readString() ?: "" // No olvides leer la URL
     )
 
-    // Constructor para Parcelable
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(id)
         parcel.writeString(nombre)
         parcel.writeString(tipo)
+        parcel.writeString(imagenUrl) // No olvides escribir la URL
     }
 
-    override fun describeContents(): Int {
-        return 0
-    }
+    override fun describeContents(): Int = 0
 
     companion object CREATOR : Parcelable.Creator<Alimento> {
         override fun createFromParcel(parcel: Parcel): Alimento {
@@ -36,6 +35,4 @@ data class Alimento(
             return arrayOfNulls(size)
         }
     }
-
-
 }

@@ -10,67 +10,59 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class PantallaConfirmacionAlimentos : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
-    private lateinit var adapter: AlimentoAdapter
+    private lateinit var adapter: ConfirmacionAlimentoAdapter // Usar el nuevo adaptador
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pantalla_confirmacion_alimentos)
 
-        // Obtener los ejercicios seleccionados
+        // Obtener los alimentos seleccionados
         val alimentosSeleccionados = intent.getParcelableArrayListExtra<Alimento>("alimentosSeleccionados")
 
         // Configurar RecyclerView
         recyclerView = findViewById(R.id.recyclerViewConfirmacionAlim)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
-        // Mostrar los ejercicios seleccionados
+        // Mostrar los alimentos seleccionados
         if (alimentosSeleccionados != null) {
-            adapter = AlimentoAdapter(alimentosSeleccionados) { alimento, isChecked ->
-                // No necesitas manejar selecciones aquí
-            }
+            adapter = ConfirmacionAlimentoAdapter(alimentosSeleccionados)
             recyclerView.adapter = adapter
         }
+
+        // Configurar navegación inferior
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_home -> {
                     if (this.javaClass != MainMenu::class.java) {
-                        val intent = Intent(this, MainMenu::class.java)
-                        startActivity(intent)
+                        startActivity(Intent(this, MainMenu::class.java))
                     }
                     true
                 }
                 R.id.navigation_explore -> {
                     if (this.javaClass != ExplorarEjercicios::class.java) {
-                        val intent = Intent(this, ExplorarEjercicios::class.java)
-                        startActivity(intent)
+                        startActivity(Intent(this, ExplorarEjercicios::class.java))
                     }
                     true
                 }
                 R.id.navigation_plan -> {
                     if (this.javaClass != ExplorarAlimentos::class.java) {
-                        val intent = Intent(this, ExplorarAlimentos::class.java)
-                        startActivity(intent)
+                        startActivity(Intent(this, ExplorarAlimentos::class.java))
                     }
                     true
                 }
-
                 R.id.navigation_routine -> {
                     if (this.javaClass != PantallaSelNivel::class.java) {
-                        val intent = Intent(this, PantallaSelNivel::class.java)
-                        startActivity(intent)
+                        startActivity(Intent(this, PantallaSelNivel::class.java))
                     }
                     true
                 }
-
                 R.id.navigation_account -> {
                     if (this.javaClass != PantallaMiCuenta::class.java) {
-                        val intent = Intent(this, PantallaMiCuenta::class.java)
-                        startActivity(intent)
+                        startActivity(Intent(this, PantallaMiCuenta::class.java))
                     }
                     true
                 }
-                // Agrega los otros casos de navegación aquí si es necesario
                 else -> false
             }
         }

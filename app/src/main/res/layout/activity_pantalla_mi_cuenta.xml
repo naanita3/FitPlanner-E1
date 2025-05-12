@@ -197,6 +197,7 @@
 
 
 
+
     <!-- Barra de navegación inferior -->
 
     <ImageButton
@@ -248,6 +249,7 @@
         app:layout_constraintEnd_toEndOf="@+id/btnSeleccionarEjerciciosMC"
         app:layout_constraintStart_toStartOf="@+id/btnSeleccionarEjerciciosMC"
         app:layout_constraintTop_toTopOf="@+id/btnSeleccionarEjerciciosMC" />
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"

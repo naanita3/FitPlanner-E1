@@ -1,67 +1,124 @@
 package com.equno.fitplanner
 
+import android.graphics.drawable.Drawable
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.CheckBox
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.DataSource
+import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.bumptech.glide.load.engine.GlideException
+import com.bumptech.glide.request.RequestListener
+import com.bumptech.glide.request.target.Target
 
 class AlimentoAdapter(
-    private val alimentos: List<Alimento>, // Lista de alimento
-    private val onAlimentoSeleccionado: (Alimento, Boolean) -> Unit // Callback para manejar la selección
+    private val alimentos: List<Alimento>,
+    private val onAlimentoSeleccionado: (Alimento, Boolean) -> Unit = { _, _ -> }
 ) : RecyclerView.Adapter<AlimentoAdapter.AlimentoViewHolder>() {
 
-    private val alimentosSeleccionados = mutableListOf<Alimento>() // Lista de alimento seleccionados
-    private var maxSeleccionados = 7 // Límite de alimento seleccionados
+    private val alimentosSeleccionados = mutableSetOf<String>() // Guardamos IDs para mejor manejo
+    private val maxSeleccionados = 7
 
-    // ViewHolder para cada item del RecyclerView
     inner class AlimentoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val tvNombre: TextView = itemView.findViewById(R.id.tvNombreAlimento) // TextView para el nombre
-        private val cbSeleccionar: CheckBox = itemView.findViewById(R.id.cbSeleccionar) // CheckBox para seleccionar
+        private val tvNombre: TextView = itemView.findViewById(R.id.tvNombreAlimento)
+        private val tvTipo: TextView = itemView.findViewById(R.id.tvTipoAlimento)
+        private val ivImagen: ImageView = itemView.findViewById(R.id.ivImagenAlimento)
+        private val cbSeleccionar: CheckBox = itemView.findViewById(R.id.cbSeleccionar)
 
-        // Método para vincular los datos a las vistas
         fun bind(alimento: Alimento) {
-            tvNombre.text = alimento.nombre // Asignar el nombre del alimento al TextView
+            // Configurar textos
+            tvNombre.text = alimento.nombre
+            tvTipo.text = alimento.tipo.uppercase()
 
-            // Listener para manejar la selección del alimento
+            // Cargar imagen con Glide
+            cargarImagen(alimento.imagenUrl)
+
+            // Configurar checkbox
+            cbSeleccionar.isChecked = alimentosSeleccionados.contains(alimento.id)
             cbSeleccionar.setOnCheckedChangeListener { _, isChecked ->
                 if (isChecked) {
-                    // Si el alimento está seleccionado y no se ha alcanzado el límite
                     if (alimentosSeleccionados.size < maxSeleccionados) {
-                        alimentosSeleccionados.add(alimento) // Agregar el alimento a la lista de seleccionados
+                        alimentosSeleccionados.add(alimento.id)
                     } else {
-                        cbSeleccionar.isChecked = false // Desmarcar el CheckBox si se supera el límite
-                        Toast.makeText(itemView.context, "Solo puedes seleccionar hasta 7 alimentos", Toast.LENGTH_SHORT).show() // Mostrar mensaje de error
+                        cbSeleccionar.isChecked = false
+                        showToast("Máximo $maxSeleccionados alimentos permitidos")
                     }
                 } else {
-                    // Si el alimento se deselecciona
-                    alimentosSeleccionados.remove(alimento) // Eliminar el alimento de la lista de seleccionados
+                    alimentosSeleccionados.remove(alimento.id)
                 }
-                onAlimentoSeleccionado(alimento, isChecked) // Llamar al callback para notificar la selección
+                onAlimentoSeleccionado(alimento, isChecked)
             }
+
+            // Manejar clic en el item completo
+            itemView.setOnClickListener {
+                cbSeleccionar.isChecked = !cbSeleccionar.isChecked
+            }
+        }
+
+        private fun cargarImagen(url: String) {
+            if (url.isBlank()) {
+                ivImagen.setImageResource(R.drawable.ic_exercise_placeholder)
+                return
+            }
+
+            Glide.with(itemView.context)
+                .load(url)
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .placeholder(R.drawable.ic_exercise_placeholder)
+                .error(R.drawable.ic_exercise_placeholder)
+                .addListener(object : RequestListener<Drawable> {
+                    override fun onLoadFailed(
+                        e: GlideException?,
+                        model: Any?,
+                        target: Target<Drawable>?,
+                        isFirstResource: Boolean
+                    ): Boolean {
+                        Log.e("Glide", "Error al cargar imagen: $url", e)
+                        return false
+                    }
+
+                    override fun onResourceReady(
+                        resource: Drawable?,
+                        model: Any?,
+                        target: Target<Drawable>?,
+                        dataSource: DataSource?,
+                        isFirstResource: Boolean
+                    ): Boolean {
+                        return false
+                    }
+                })
+                .into(ivImagen)
+        }
+
+        private fun showToast(message: String) {
+            Toast.makeText(itemView.context, message, Toast.LENGTH_SHORT).show()
         }
     }
 
-    // Método para obtener la lista de alimentos seleccionados
-    fun getAlimentosSeleccionados(): List<Alimento> {
-        return alimentosSeleccionados
-    }
-
-    // Método para crear un ViewHolder
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AlimentoViewHolder {
-        // Inflar el layout de cada item (item_alimento.xml)
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_alimento, parent, false)
-        return AlimentoViewHolder(view) // Devolver un nuevo ViewHolder
+        val view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_alimento, parent, false)
+        return AlimentoViewHolder(view)
     }
 
-    // Método para vincular los datos a un ViewHolder en una posición específica
     override fun onBindViewHolder(holder: AlimentoViewHolder, position: Int) {
-        holder.bind(alimentos[position]) // Vincular los datos del alimentos en la posición actual
+        holder.bind(alimentos[position])
     }
 
-    // Método para obtener el número total de items en la lista
     override fun getItemCount(): Int = alimentos.size
 
+    fun getAlimentosSeleccionados(): List<Alimento> {
+        return alimentos.filter { alimentosSeleccionados.contains(it.id) }
+    }
+
+    fun clearSelections() {
+        alimentosSeleccionados.clear()
+        notifyDataSetChanged()
+    }
 }

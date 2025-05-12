@@ -101,7 +101,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="200dp"
         android:layout_marginBottom="58dp"
-        android:background="#FFFFFF"
+        android:background="#333"
         android:scrollbars="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
