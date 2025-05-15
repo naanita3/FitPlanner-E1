@@ -23,7 +23,7 @@ class AlimentoAdapter(
 ) : RecyclerView.Adapter<AlimentoAdapter.AlimentoViewHolder>() {
 
     private val alimentosSeleccionados = mutableSetOf<String>() // Guardamos IDs para mejor manejo
-    private val maxSeleccionados = 7
+    private val maxSeleccionados = 20
 
     inner class AlimentoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val tvNombre: TextView = itemView.findViewById(R.id.tvNombreAlimento)

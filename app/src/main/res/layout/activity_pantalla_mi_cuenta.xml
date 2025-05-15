@@ -110,18 +110,19 @@
         app:layout_constraintTop_toBottomOf="@id/tvNombreUsuario" />
 
     <!-- Sección de IMC -->
+
     <Button
         android:id="@+id/btnCalcularIMC"
         android:layout_width="160dp"
         android:layout_height="40dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:background="#181819"
         android:text="Calcular IMC"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view2" />
 
@@ -250,6 +251,22 @@
         app:layout_constraintStart_toStartOf="@+id/btnSeleccionarEjerciciosMC"
         app:layout_constraintTop_toTopOf="@+id/btnSeleccionarEjerciciosMC" />
 
+    <Button
+        android:id="@+id/btnLogOutMC"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="41dp"
+        android:background="#181819"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnCalcularIMC"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
