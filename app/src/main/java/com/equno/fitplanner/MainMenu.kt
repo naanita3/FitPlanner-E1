@@ -45,19 +45,6 @@ class MainMenu : AppCompatActivity() {
             })
         }
 
-        //selección de ejercicios
-        findViewById<Button>(R.id.botonSeleccion).setOnClickListener {
-            startActivity(Intent(this, PantSeleccionEjercicios::class.java).apply {
-                putExtra("user_id", userId)
-            })
-        }
-
-        //alimentos
-        findViewById<Button>(R.id.botonSeleccionAlim).setOnClickListener {
-            startActivity(Intent(this, PantSeleccionAlimentos::class.java).apply {
-                putExtra("user_id", userId)
-            })
-        }
 
         //rutinas predefinidas
         findViewById<ImageButton>(R.id.RutinasPredeterminadas).setOnClickListener {
@@ -74,22 +61,6 @@ class MainMenu : AppCompatActivity() {
             })
         }
 
-        //imc
-        findViewById<Button>(R.id.botonCalculoIMC).setOnClickListener {
-            startActivity(Intent(this, PantallaIMC::class.java).apply {
-                putExtra("user_id", userId)
-            })
-        }
-        //LOGOUT
-        findViewById<Button>(R.id.botonLogOut).setOnClickListener {
-            sharedPref.edit().remove("user_id").apply()
-
-            val intent = Intent(this, MainActivity::class.java).apply {
-                flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-            }
-            startActivity(intent)
-            finish()
-        }
     }
 
     private fun setupBottomNavigation() {

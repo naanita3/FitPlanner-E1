@@ -1,8 +1,10 @@
 package com.equno.fitplanner
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.Color
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -18,6 +20,7 @@ import java.util.*
 class PantallaMiCuenta : AppCompatActivity() {
 
     private lateinit var binding: ActivityPantallaMiCuentaBinding
+    private lateinit var sharedPref: SharedPreferences
     private val db = Firebase.firestore
     private lateinit var userId: String
     private val avatares = listOf(
@@ -32,6 +35,8 @@ class PantallaMiCuenta : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityPantallaMiCuentaBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        sharedPref = getSharedPreferences("FitPlannerPrefs", MODE_PRIVATE)
 
         userId = intent.getStringExtra("user_id") ?: run {
             Toast.makeText(this, "Error: No se encontró usuario", Toast.LENGTH_SHORT).show()
@@ -66,7 +71,6 @@ class PantallaMiCuenta : AppCompatActivity() {
                     }
                     true
                 }
-
                 R.id.navigation_routine -> {
                     if (this.javaClass != PantallaSelNivel::class.java) {
                         val intent = Intent(this, PantallaSelNivel::class.java)
@@ -74,7 +78,6 @@ class PantallaMiCuenta : AppCompatActivity() {
                     }
                     true
                 }
-
                 R.id.navigation_account -> {
                     if (this.javaClass != PantallaMiCuenta::class.java) {
                         val intent = Intent(this, PantallaMiCuenta::class.java)
@@ -82,7 +85,6 @@ class PantallaMiCuenta : AppCompatActivity() {
                     }
                     true
                 }
-                // Agrega los otros casos de navegación aquí si es necesario
                 else -> false
             }
         }
@@ -92,11 +94,9 @@ class PantallaMiCuenta : AppCompatActivity() {
         db.collection("usuarios").document(userId).get()
             .addOnSuccessListener { document ->
                 if (document != null && document.exists()) {
-                    // Datos básicos del usuario
                     binding.tvNombreUsuario.text = document.getString("nombre") ?: "Usuario"
                     binding.tvEmailUsuario.text = document.getString("correo") ?: "usuario@mail.com"
 
-                    // Avatar (si no existe, usar el primero por defecto)
                     avatarSeleccionado = (document.getLong("avatar") ?: 0).toInt()
                     if (avatarSeleccionado in avatares.indices) {
                         binding.imageView2.setImageResource(avatares[avatarSeleccionado])
@@ -104,11 +104,9 @@ class PantallaMiCuenta : AppCompatActivity() {
                         binding.imageView2.setImageResource(avatares[0])
                     }
 
-                    // Datos de IMC
                     val imc = document.getDouble("imc") ?: 0.0
                     val historialIMC = document.get("historialIMC") as? List<Map<String, Any>>
 
-                    // Obtener el último registro de IMC si existe
                     val ultimoIMC = historialIMC?.maxByOrNull {
                         (it["fecha"] as? Timestamp)?.toDate() ?: Date(0)
                     }
@@ -167,18 +165,28 @@ class PantallaMiCuenta : AppCompatActivity() {
             mostrarSelectorAvatares()
         }
 
-        //seleccion de ejercicios BOTON
         findViewById<ImageButton>(R.id.btnSeleccionarEjerciciosMC).setOnClickListener {
             startActivity(Intent(this, PantSeleccionEjercicios::class.java).apply {
                 putExtra("user_id", userId)
             })
         }
 
-        //seleccion de alimentos BOTON
         findViewById<ImageButton>(R.id.btnSeleccionarAlimentosMC).setOnClickListener {
             startActivity(Intent(this, PantSeleccionAlimentos::class.java).apply {
                 putExtra("user_id", userId)
             })
+        }
+
+        findViewById<Button>(R.id.btnLogOutMC).setOnClickListener {
+            // 1. Limpiar TODAS las preferencias (mismo nombre que en MainMenu)
+            getSharedPreferences("user_prefs", MODE_PRIVATE).edit().clear().apply()
+
+            // 2. Redirigir al login y limpiar el stack
+            val intent = Intent(this, MainActivity::class.java).apply {
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            }
+            startActivity(intent)
+            finishAffinity()  // Cierra todas las actividades
         }
     }
 
@@ -213,7 +221,6 @@ class PantallaMiCuenta : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        // Actualizar datos del IMC por si se calculó uno nuevo
         cargarDatosUsuario()
     }
 }

@@ -14,27 +14,23 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        // 1. Verificar si hay sesión activa al iniciar
+        val sharedPref = getSharedPreferences("user_prefs", MODE_PRIVATE)
+        if (sharedPref.getString("user_id", null) != null) {
+            // Si hay usuario, redirigir al menú principal
+            startActivity(Intent(this, MainMenu::class.java))
+            finish() // Evita que el usuario vuelva atrás
         }
 
-        val btn: Button = findViewById(R.id.buttonLogin)
-        btn.setOnClickListener {
-
-            val intent: Intent = Intent(this, pantalla2:: class.java)
-            startActivity(intent)
+        // 2. Botón de login (existente)
+        findViewById<Button>(R.id.buttonLogin).setOnClickListener {
+            startActivity(Intent(this, pantalla2::class.java))
         }
 
-        val btnr: Button = findViewById(R.id.botonregistrate)
-        btnr.setOnClickListener {
-
-            val intent: Intent = Intent(this, crearcuenta:: class.java)
-            startActivity(intent)
+        // 3. Botón de registro (existente)
+        findViewById<Button>(R.id.botonregistrate).setOnClickListener {
+            startActivity(Intent(this, crearcuenta::class.java))
         }
-
-
-
     }
 }
